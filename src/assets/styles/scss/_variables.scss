@@ -1,0 +1,41 @@
+
+//COLORS
+
+$color-bg: rgb(41, 56, 73);
+
+$pink:rgb(249,37,114);
+$green: rgb(120,199,186);
+$yellow: rgb(231, 219, 117);
+$white: rgb(248, 249, 255);
+
+$color-font-primary: rgb(248, 249, 255);
+$color-font-secondary: rgb(231, 219, 117);
+
+$color-heading-primary: rgb(249,37,114);
+$color-heading-secondary: rgb(167,226,44);
+$color-heading-alternative: #78c7ba;
+
+$color-button-primary: rgb(249,37,114);
+$color-button-primary-hover: rgba(249, 37, 114, 0.2);
+$color-social-primary: rgb(249,37,114);
+
+$color-info-error-bg: #e3a39f;
+$color-info-success-bg: #a6e39f;
+$color-info-success:#032107;
+$color-info-error:#210303;
+
+//FONT STYLE
+
+$font-headings: 'Chakra Petch', sans-serif;
+$font-subtitles: 'Chakra Petch', sans-serif;
+$font-body: 'Roboto Mono', monospace;
+
+//BREAKPOINTS
+// Desktop
+$mobile: 640px;
+
+// Tablet
+$tablet: 768px;
+
+// Desktop
+$desktop: 1200px;

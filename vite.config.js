@@ -17,5 +17,13 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  // Configures the application to append the _variables.scss on all vue component's styles
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/assets/styles/scss/main.scss";'
+      }
+    }
   }
 })
