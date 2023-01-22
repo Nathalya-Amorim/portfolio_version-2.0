@@ -1,0 +1,171 @@
+
+
+h2 {
+    @include heading($font-headings, 3.0em, $color-font-secondary);
+
+    @include tablet {
+        font-size: 3.5em;
+    }
+}
+
+h3 {
+    @include heading($font-headings, 2.0em, $color-font-secondary, 10px);
+
+
+    @include tablet {
+        font-size: 2.5em;
+    }
+}
+
+h4{ 
+    @include heading($font-headings, 1.5em, 10px, $color-font-primary);
+
+    @include tablet {
+        font-size: 2.0em;
+    }
+}
+
+h5 { 
+    @include heading($font-headings, 1.3em, $color-heading-secondary);
+
+    @include tablet {
+        font-size: 2.0em;
+    }
+}
+
+header {
+    margin: 20px;
+}
+
+section {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span.feature {
+    font-family: $font-body;
+    font-size: 2.0em;
+    color: $color-heading-primary;
+    white-space: nowrap;
+
+    @include tablet {
+        font-size: 3.5em;
+    }
+}
+
+span.bold {
+    font-weight: bolder;
+    // font-size: 120%;
+}
+// START BUTTONS
+.btn {
+    border: 3px solid $color-button-primary;
+    color: $color-button-primary;
+    background-color: $color-bg;
+    // font-size: 1.3em;
+    font-family: $font-headings;
+    text-transform: uppercase;
+    transition: all ease-in-out .3s;
+    justify-content: center;
+    display: flex;
+    padding-top: 6px;
+    padding-bottom: 5px;
+
+    @include tablet {
+        font-size: 1.3em;
+    }
+}
+
+.btn:hover {
+    background-color: $color-button-primary-hover;
+    -webkit-box-shadow: 0px 0px 20px 2px $color-button-primary; 
+    box-shadow: 0px 0px 20px 2px $color-button-primary;
+}
+//END BUTTONS
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-icon {
+    display: flex;
+    flex-direction: column;
+    animation: bounce 2s both infinite;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scroll-icon h2, .scroll-icon h3 {
+    margin: auto;
+    color: $color-font-primary;
+    font-size: 1.5em;
+}
+
+.hidden{
+    display: none;
+}
+
+.thing-of-stuff {
+    font-size: 4em;
+}
+
+.container {
+    // display: flex;
+    // flex-direction: column;
+    max-width: 1280px;
+    margin: auto;
+}
+
+// BEGINS ANIMATIONS
+
+@keyframes bounce {
+    0% {
+        margin-top: -10px;
+        opacity: 1;
+    }
+
+    25% {
+        margin-top: 0px;
+        opacity: 0.6;
+    }
+
+    50% {
+        margin-top: 0px;
+        opacity: 0.6;
+    }
+
+    100% {
+        margin-top: -10px;
+        opacity: 1;
+    }
+}
+
+// ENDS ANIMATIONS
+
+// BEGINS INFO MESSAGES
+
+.info {
+    border-radius: 5px;
+    border: 1px;
+    padding: 10px;
+}
+
+.info-error {
+    background-color: $color-info-error-bg;
+    color: $color-info-error;
+}
+
+.info-success {
+    background-color: $color-info-success-bg;
+    color: $color-info-success;
+}
+
+// ENDS INFO MESSAGES
+
+.close-btn {
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
