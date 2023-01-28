@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import AboutSection from '../components/AboutSection.vue';
-// import NavSection from '../components/NavSection.vue';
+import ContactMeSection from '../components/ContactMeSection.vue';
 import IntroSection from '../components/IntroSection.vue';
+import MyWorkSection from '../components/MyWorkSection.vue';
+import SkillsSection from '../components/SkillsSection.vue';
 
 </script>
 
@@ -9,6 +11,9 @@ import IntroSection from '../components/IntroSection.vue';
   <main id="body">
     <IntroSection />
     <AboutSection />
+    <SkillsSection />
+    <MyWorkSection />
+    <ContactMeSection />
   </main>
 </template>
 <style lang="scss">
