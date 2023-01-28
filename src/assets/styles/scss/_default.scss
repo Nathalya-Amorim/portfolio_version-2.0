@@ -1,5 +1,3 @@
-
-
 h2 {
     @include heading($font-headings, 3.0em, $color-font-secondary);
 
@@ -13,11 +11,11 @@ h3 {
 
 
     @include tablet {
-        font-size: 2.5em;
+        font-size: 2.5em !important;
     }
 }
 
-h4{ 
+h4 {
     @include heading($font-headings, 1.5em, 10px, $color-font-primary);
 
     @include tablet {
@@ -25,7 +23,7 @@ h4{
     }
 }
 
-h5 { 
+h5 {
     @include heading($font-headings, 1.3em, $color-heading-secondary);
 
     @include tablet {
@@ -58,6 +56,7 @@ span.bold {
     font-weight: bolder;
     // font-size: 120%;
 }
+
 // START BUTTONS
 .btn {
     border: 3px solid $color-button-primary;
@@ -79,9 +78,10 @@ span.bold {
 
 .btn:hover {
     background-color: $color-button-primary-hover;
-    -webkit-box-shadow: 0px 0px 20px 2px $color-button-primary; 
+    -webkit-box-shadow: 0px 0px 20px 2px $color-button-primary;
     box-shadow: 0px 0px 20px 2px $color-button-primary;
 }
+
 //END BUTTONS
 
 .flex-center {
@@ -98,13 +98,14 @@ span.bold {
     margin-right: auto;
 }
 
-.scroll-icon h2, .scroll-icon h3 {
+.scroll-icon h2,
+.scroll-icon h3 {
     margin: auto;
     color: $color-font-primary;
     font-size: 1.5em;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
