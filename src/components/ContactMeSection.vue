@@ -5,7 +5,8 @@
         <section id="form-section">
             <h2 class="hidden">Form section</h2>
             <div class="row">
-                <div class="col-md-8 mb-20">
+                <div class="col-md-8 mb-20" data-aos="fade-right" data-aos-ease="ease" data-aos-duration="500"
+                    data-aos-delay="500">
                     <span>
                         You got a question or purpose, or just want to <br>say “hello”? Go ahead. I will be happy to
                         answer you.
@@ -17,7 +18,8 @@
                         <!-- An error message will be displayed here after the form response. -->
                     </span>
                 </div>
-                <div class="social-links col-md-4">
+                <div class="social-links col-md-4" data-aos="fade-left" data-aos-ease="ease" data-aos-duration="500"
+                    data-aos-delay="500">
                     <h2 class="hidden">Contact contacts</h2>
                     <span>Feeling social? Find me on these online spaces too!</span>
                     <ul class="mt-20">
@@ -32,7 +34,8 @@
                     </ul>
                 </div>
                 <form action="mail/send.php" method="POST" id="mail-form" ref="mail-form" class="col-md-8">
-                    <div class="form-row">
+                    <div class="form-row" data-aos="fade-right" data-aos-ease="ease" data-aos-duration="500"
+                        data-aos-delay="500">
                         <div class="form-group col-6">
                             <label for="firstname">&lt;first name&gt; *</label>
                             <input ref="firstname" class="form-control" type="text" id="firstname" name="firstname"
