@@ -4,11 +4,14 @@
         <div class="navigation-container">
             <ul>
                 <!--TODO: Add links to the list items, and hook javascript events to navigation actions-->
-                <li class="square intro-nav rotated selected" data-anchor=".intro-anchor"></li>
-                <li class="square about-nav" data-anchor=".about-anchor"></li>
-                <li class="square skills-nav" data-anchor=".skills-anchor"></li>
-                <li class="square my-work-nav" data-anchor=".my-work-anchor"></li>
-                <li class="square contact-nav" data-anchor=".contact-anchor"></li>
+                <li class="square intro-nav rotated selected" ref="intro-anchor" @click="navigateTo('intro-anchor')">
+                </li>
+                <li class="square about-nav" ref="about-anchor" @click="navigateTo('about-anchor')"></li>
+                <li class="square skills-nav" ref="skills-anchor" @click="navigateTo('skills-anchor')"></li>
+                <li class="square my-work-nav" ref="my-work-anchor" @click="navigateTo('my-work-anchor')">
+                </li>
+                <li class="square contact-nav" ref="contact-anchor" @click="navigateTo('contact-anchor')">
+                </li>
             </ul>
             <div class="vertical-line"></div>
         </div>
@@ -17,7 +20,27 @@
 
 <script>
 export default {
-    name: 'NavControllerWidget'
+    name: 'NavControllerWidget',
+    methods: {
+        navigateTo(anchor) {
+            const element = this.$root.$el.getElementsByClassName(anchor)[0];
+            if (element) {
+                this.resetNavs();
+                this.$refs[anchor].classList.add('rotated');
+                this.$refs[anchor].classList.add('selected');
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        },
+
+        resetNavs() {
+            let navs = Array.from(this.$el.getElementsByClassName("square"));
+            console.log(navs);
+            navs.forEach(nav => {
+                nav.classList.remove("selected");
+                nav.classList.remove("rotated");
+            });
+        }
+    }
 }
 </script>
 
