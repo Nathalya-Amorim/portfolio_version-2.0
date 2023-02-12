@@ -62,8 +62,14 @@ export default {
             padding: 5px;
             font-size: 1.6em;
             width: 35px;
+            height: 35px;
             transition: all ease-in-out .3s;
             color: $white;
+
+            i {
+                margin: auto;
+                display: block;
+            }
         }
 
 

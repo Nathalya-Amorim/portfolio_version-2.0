@@ -17,12 +17,12 @@
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar> -->
-        <div class="col-md-6 col-sm-6">
+        <div class="col-6">
             <h1 class="hidden">Nathalya Menezes - Portfolio</h1>
             <img class="logo" src="../../img/logo-svg.svg" alt="Nathalya's Logo" width="25%">
         </div>
         <!-- START NAVIGATION MENU -->
-        <nav class="col-md-6 col-sm-6">
+        <nav class="col-6">
             <h2 class="hidden"> Mobile Navigation Menu </h2>
             <div>
                 <input type="checkbox" id="overlay-input" />
@@ -234,6 +234,8 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
 .logo {
     width: 25%;
+    margin: 15px;
+    width: 50px;
 
     @include tablet {
         width: 5%;

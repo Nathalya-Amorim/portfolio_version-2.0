@@ -32,38 +32,43 @@
                     </ul>
                 </div>
                 <form action="mail/send.php" method="POST" id="mail-form" ref="mail-form" class="col-md-8">
-                    <div>
-                        <label for="firstname">&lt;first name&gt; *</label>
-                        <input ref="firstname" type="text" id="firstname" name="firstname" required="required"
-                            placeholder="Enter your first name">
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="firstname">&lt;first name&gt; *</label>
+                            <input ref="firstname" class="form-control" type="text" id="firstname" name="firstname"
+                                required="required" placeholder="Enter your first name">
+                        </div>
+
+                        <div class="form-group col-6">
+                            <label for="lastname">&lt;last name&gt; *</label>
+                            <input ref="lastname" class="form-control" type="text" id="lastname" name="lastname"
+                                required placeholder="Enter your last name">
+                        </div>
+
+                        <div class="form-group col-6">
+                            <label for="email">&lt;email&gt; *</label>
+                            <input ref="email" class="form-control" type="email" id="email" name="email" required
+                                placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group col-6">
+                            <label for="phone">&lt;your phone&gt;</label>
+                            <input ref="phone" class="form-control" type="tel" id="phone" name="phone"
+                                placeholder="Enter you phone">
+                        </div>
+
+                        <div class="form-group col-12">
+                            <label for="message">&lt;your message&gt; *</label>
+                            <textarea ref="message" class="form-control" name="message" id="message" cols="30" rows="1"
+                                placeholder="Hi, I am beginning a new business, and I need a website for our project..."></textarea>
+                        </div>
+
+                        <div class="col-4 submit-contact-btn">
+                            <input @click.prevent="processMail" ref="btn-submit-contact" type="submit" class="btn"
+                                value="SAY HELLO">
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="lastname">&lt;last name&gt; *</label>
-                        <input ref="lastname" type="text" id="lastname" name="lastname" required
-                            placeholder="Enter your last name">
-                    </div>
-
-                    <div>
-                        <label for="email">&lt;email&gt; *</label>
-                        <input ref="email" type="email" id="email" name="email" required placeholder="Enter your email">
-                    </div>
-
-                    <div>
-                        <label for="phone">&lt;your phone&gt;</label>
-                        <input ref="phone" type="tel" id="phone" name="phone" placeholder="Enter you phone">
-                    </div>
-
-                    <div class="">
-                        <label for="message">&lt;your message&gt; *</label>
-                        <textarea ref="message" name="message" id="message" cols="30" rows="1"
-                            placeholder="Hi, I am beginning a new business, and I need a website for our project..."></textarea>
-                    </div>
-
-                    <div class="col-2 submit-contact-btn">
-                        <input @click.prevent="processMail" ref="btn-submit-contact" type="submit" class="btn"
-                            value="SAY HELLO">
-                    </div>
                 </form>
             </div>
         </section>
@@ -93,24 +98,7 @@ export default {
     flex-direction: row;
 
     form {
-
-        display: flex;
-        flex-direction: column;
-        row-gap: 40px;
-
-        @include tablet {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 40px;
-            row-gap: 40px;
-            width: 70%;
-            max-width: 800px;
-        }
-
         div {
-            display: flex;
-            flex-direction: column;
-            row-gap: 10px;
 
             textarea,
             input[type="text"],
@@ -126,7 +114,9 @@ export default {
         }
 
         .submit-contact-btn {
-            width: 200px;
+            input {
+                width: 200px;
+            }
         }
     }
 
@@ -139,10 +129,10 @@ export default {
             padding-left: 50px;
             padding-top: 0px;
         }
-    }
 
-    .col-2 {
-        grid-column: 1 / span 2;
+        ul {
+            padding: 0px;
+        }
     }
 
     .info.info-error {
@@ -164,6 +154,7 @@ export default {
 
     ul li a:hover {
         color: $pink;
+        background-color: transparent;
     }
 
     ul li a {
@@ -175,6 +166,14 @@ export default {
 
     .error {
         border-color: $pink !important;
+    }
+
+    .form-control {
+        border-radius: 0rem !important;
+    }
+
+    .mt-20 {
+        margin-top: 20px;
     }
 }
 </style>
