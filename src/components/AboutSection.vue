@@ -1,7 +1,8 @@
 <template>
     <section class="about-anchor about-section">
         <div class="row">
-            <div class="col-md-6 center-block">
+            <div class="col-md-6 center-block" data-aos="fade-right" data-aos-ease="ease" data-aos-duration="500"
+                data-aos-delay="500">
                 <h3 class="about-title mb-30">&lt;about&gt;</h3>
 
                 <p class="p-about mb-20">Hello there! You stumbled upon me!<br></p>
@@ -29,7 +30,7 @@
 
                 <h3 class="about-title">&lt;about&gt;</h3>
             </div>
-            <div class="">
+            <div class="" data-aos="fade-right" data-aos-ease="ease" data-aos-duration="500" data-aos-delay="500">
                 <div class="about-picture">
                     <div class="translated-border">
                     </div>
