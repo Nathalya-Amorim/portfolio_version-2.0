@@ -13,19 +13,28 @@
 
 <script>
 import SkillThumb from './SkillThumb.vue';
-import api from "../services/api.js";
+// import api from "../services/api.js";
+import axios from "axios";
 
 export default {
     name: "SkillsSection",
     components: { SkillThumb },
     data() {
         return {
-            skillsData: {}
+            skillsData: []
         }
     },
     created() {
-        api.getSkills()
-            .then(data => { this.skillsData = data })
+        // This is the old php call
+        // api.getSkills()
+        //     .then(data => { this.skillsData = data })
+        //     .catch(err => console.log("ERROR: Could not load skills data. [ " + err) + " ]");
+
+        axios.get('http://localhost:3000/skills')
+            .then(res => {
+                console.log(res);
+                this.skillsData = res.data;
+            })
             .catch(err => console.log("ERROR: Could not load skills data. [ " + err) + " ]");
     }
 }

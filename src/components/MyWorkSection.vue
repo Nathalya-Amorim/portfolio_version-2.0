@@ -5,8 +5,8 @@
         <h3>&lt;my work&gt;</h3>
 
         <div class="work-container">
-            <WorkThumb v-for="work in worksData" :work="work" @load-light-box-data="loadLightBoxData"
-                v-bind:key="work.id"></WorkThumb>
+            <WorkThumb v-for="work in worksData" :work="work" @load-light-box-data="loadLightBoxData" v-bind:key="work.id">
+            </WorkThumb>
             <LightBox v-if="showLightBox" :work="workLightBoxData" @close-light-box="showLightBox = false"></LightBox>
         </div>
 
@@ -15,7 +15,8 @@
 </template>
 
 <script>
-import api from '../services/api.js'
+import axios from 'axios';
+// import api from '../services/api.js'
 import LightBox from './LightBox.vue';
 import WorkThumb from './WorkThumb.vue';
 
@@ -30,9 +31,22 @@ export default {
         }
     },
     created() {
-        api.getWorks()
-            .then(data => { this.worksData = data })
-            .catch(err => console.log("ERROR: Could not load projects data. [" + err + "]"));
+        // api.getWorks()
+        //     .then(data => { this.worksData = data })
+        //     .catch(err => console.log("ERROR: Could not load projects data. [" + err + "]"));
+
+        axios.get('http://localhost:3000/projects')
+            .then(res => {
+                console.log(res);
+                this.worksData = res.data;
+            })
+            .catch(err => console.log("ERROR: Could not load works data. [ " + err) + " ]");
+    },
+    methods: {
+        loadLightBoxData(work) {
+            this.workLightBoxData = work;
+            this.showLightBox = true;
+        }
     }
 
 }
@@ -50,6 +64,7 @@ export default {
         position: relative;
         margin-top: 30px;
         margin-bottom: 50px;
+        cursor: pointer;
 
         @include tablet {
             // width: calc(50%);
@@ -67,11 +82,12 @@ export default {
     }
 
     .work-picture:hover .work-picture-overlay {
-        opacity: 0;
+        @include picture-overlay;
     }
 
     .work-picture-overlay {
-        @include picture-overlay;
+
+        opacity: 0;
     }
 
     .work-title {
@@ -79,12 +95,16 @@ export default {
         position: absolute;
         opacity: 0;
         width: 100%;
-        bottom: 10px;
+        bottom: 45%;
+        font-weight: bold;
         font-size: 1.7em;
         color: $white;
-        background-color: rgb(249, 37, 114, 0.7);
+        background-color: rgb(249, 37, 114, 1);
         padding: 10px;
         transition: all ease-in-out 0.3s;
+        text-align: center;
+        z-index: 5;
+
     }
 
 
