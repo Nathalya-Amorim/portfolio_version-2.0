@@ -17,13 +17,13 @@
                     in the tech industry, starting with a basic <span class="span-pink">HTML</span> course on Udemy and
                     later enrolling in <span class="span-yellow">Interactive Media Design</span> program at <span
                         class="span-green">
-                        Fanshawe College</span>,
+                        Fanshawe College</span>.
                     <br>
                 </p>
                 <p> The journey hasnt's been without challenges, but the thrill of overcoming obstacles and continuously
                     improving my crafts keeps me motivated and inspired. That's why I am so passionate about my career
-                    and my hobby as <span class="span-pink">Motion Designer</span> and <span
-                        class="span-yellow">3D</span> enthusiast</p>
+                    and my hobby as <span class="span-pink">Motion Designer</span> and <span class="span-yellow">3D</span>
+                    enthusiast.</p>
 
                 <p class="p-about">So, that's a little about me and my journey into the exciting world of
                     technology.<br></p>
@@ -57,7 +57,7 @@ export default {
 
 .about-title {
     font-size: 2.5em;
-    color: rgb(231, 219, 117);
+    color: rgb(167, 226, 44);
 }
 
 
@@ -130,7 +130,8 @@ export default {
 }
 
 .about-title {
-    color: $color-font-secondary;
+    color: $color-heading-secondary;
+    font-weight: bold;
 }
 
 .p-about {

@@ -1,5 +1,5 @@
-@mixin heading($font-family: $font-headings, $font-size: 2.0em, $font-color: $color-font-primary, $margin-top: 10px) {
-    font-family: $font-family;
+@mixin heading($font-body: $font-headings, $font-size: 2.0em, $font-color: $color-font-primary, $margin-top: 10px) {
+    font-family: $font-body;
     font-size: $font-size;
     color: $font-color;
     margin-top: $margin-top;
@@ -12,7 +12,7 @@
     z-index: 3;
     height: 100%;
     width: 100%;
-    transition: all ease-in-out 0.3s;    
+    transition: all ease-in-out 0.3s;
 }
 
 @mixin translated-border($border-color: $pink, $width: 100%, $height: 100%) {
@@ -31,15 +31,15 @@
         @content;
     }
 }
- 
+
 // tablet
 @mixin tablet {
     @media (min-width: #{$tablet}) {
         @content;
     }
 }
- 
- // Mobile
+
+// Mobile
 @mixin mobile {
     @media (min-width: #{$mobile}) {
         @content;
