@@ -62,11 +62,7 @@ export default {
             border-right: 2px solid $white;
             width: 85%;
 
-            .vertical-line {
-                // border-left: 1px solid;
-                // border-right: 1px solid;
-                // width: 50%;
-            }
+
         }
 
         .square {

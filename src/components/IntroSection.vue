@@ -15,8 +15,11 @@
                </div>
             </div>
             <b-row class="intro-resume">
-               <b-button class="justify-content-center">View my resume</b-button>
+               <a href="https://example.com/path/to/resume.pdf" target="_blank">
+                  <b-button class="justify-content-center">View my resume</b-button>
+               </a>
             </b-row>
+
          </div>
 
          <div class="col-md-6 center-block order-1 order-md-2">
@@ -47,7 +50,7 @@ export default {
    }
 
    .feature {
-      font-family: "Roboto Mono", monospace;
+      font-family: 'Lora', serif;
       color: $pink;
       font-size: 2.5em;
 
@@ -86,6 +89,9 @@ export default {
       color: white;
       font-size: 1.5em;
       font-family: "Chakra Petch", sans-serif;
+      border-radius: 5px;
+      padding-left: 5px;
+      margin-right: 8px;
    }
 
    .text {
@@ -108,5 +114,7 @@ export default {
    .btn {
       margin: auto;
    }
+
+
 }
 </style>
