@@ -1,7 +1,7 @@
 <template>
     <section class="about-anchor about-section">
         <div class="row">
-            <div class="col-md-6 center-block" data-aos="fade-right" data-aos-ease="ease" data-aos-duration="500"
+            <div class="col-md-8 center-block" data-aos="fade-right" data-aos-ease="ease" data-aos-duration="500"
                 data-aos-delay="500">
                 <h3 class="about-title mb-30">&lt;about&gt;</h3>
 
@@ -20,7 +20,8 @@
                         Fanshawe College</span>.
                     <br>
                 </p>
-                <p> The journey hasnt's been without challenges, but the thrill of overcoming obstacles and continuously
+                <p class="secondParagraph"> The journey hasnt's been without challenges, but the thrill of overcoming
+                    obstacles and continuously
                     improving my crafts keeps me motivated and inspired. That's why I am so passionate about my career
                     and my hobby as <span class="span-pink">Motion Designer</span> and <span class="span-yellow">3D</span>
                     enthusiast.</p>
@@ -34,7 +35,7 @@
                 <div class="about-picture">
                     <div class="translated-border">
                     </div>
-                    <b-img class="img-fluid" src=../../img/profile_desktop.jpg></b-img>
+                    <b-img class="img-fluid" src=../../img/profile_desktop2.png></b-img>
                 </div>
             </div>
         </div>
@@ -135,7 +136,7 @@ export default {
 }
 
 .p-about {
-    font-family: $font-body;
+    font-family: $font-lexend;
     line-height: 1.7em;
 }
 
@@ -159,6 +160,10 @@ export default {
     padding: 10px;
 
 
+}
+
+.secondParagraph {
+    font-family: $font-lexend;
 }
 
 .profile-pic {

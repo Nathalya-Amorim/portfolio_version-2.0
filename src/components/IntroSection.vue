@@ -15,7 +15,7 @@
                </div>
             </div>
             <b-row class="intro-resume">
-               <a href="https://example.com/path/to/resume.pdf" target="_blank">
+               <a href="https://xd.adobe.com/view/40110f57-e105-4288-91e3-3357355e6c07-1542/?fullscreen" target="_blank">
                   <b-button class="justify-content-center">View my resume</b-button>
                </a>
             </b-row>
