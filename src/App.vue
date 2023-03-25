@@ -1,21 +1,14 @@
 <script setup>
-import NavSection from './components/NavSection.vue';
-import SocialWidget from './components/SocialWidget.vue';
-import NaVControllerWidget from './components/NavControllerWidget.vue';
+// import NavSection from './components/NavSection.vue';
+// import SocialWidget from './components/SocialWidget.vue';
+// import NaVControllerWidget from './components/NavControllerWidget.vue';
 
 </script>
 
 <template>
-  <div class="container-fluid">
-    <NavSection />
-    <router-view />
-    <SocialWidget />
-    <NaVControllerWidget />
-    <footer class="footer mb-20">
-      <h2 class="hidden">Footer</h2>
-      <p> &copy; Nathalya Menezes 2023</p>
-    </footer>
-  </div>
+  <!-- <div class=""> -->
+  <router-view />
+  <!-- </div> -->
 </template>
 
 <style lang="scss">

@@ -10,15 +10,16 @@
             <LightBox v-if="showLightBox" :work="workLightBoxData" @close-light-box="showLightBox = false"></LightBox>
         </div>
 
-        <h3>&lt;/my work&gt;</h3>
+
     </section>
 </template>
 
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 // import api from '../services/api.js'
 import LightBox from './LightBox.vue';
 import WorkThumb from './WorkThumb.vue';
+import projects from '../../projects.json';
 
 export default {
     name: "MyWorkSection",
@@ -31,16 +32,13 @@ export default {
         }
     },
     created() {
-        // api.getWorks()
-        //     .then(data => { this.worksData = data })
-        //     .catch(err => console.log("ERROR: Could not load projects data. [" + err + "]"));
-
-        axios.get('http://localhost:3000/projects')
-            .then(res => {
-                console.log(res);
-                this.worksData = res.data;
-            })
-            .catch(err => console.log("ERROR: Could not load works data. [ " + err) + " ]");
+        // axios.get('http://localhost:3000/projects')
+        //     .then(res => {
+        //         console.log(res);
+        //         this.worksData = res.data;
+        //     })
+        //     .catch(err => console.log("ERROR: Could not load works data. [ " + err) + " ]");
+        this.worksData = projects;
     },
     methods: {
         loadLightBoxData(work) {
