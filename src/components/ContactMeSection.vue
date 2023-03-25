@@ -31,7 +31,7 @@
                         </li>
                     </ul>
                 </div>
-                <form action="mail/send.php" method="POST" id="mail-form" ref="mail-form" class="col-md-8">
+                <form action="/includes/mail/mail.php" method="POST" id="mail-form" ref="mail-form" class="col-md-8">
                     <div class="form-row" data-aos="fade-right" data-aos-ease="ease" data-aos-duration="500"
                         data-aos-delay="500">
                         <div class="form-group col-6">
@@ -72,7 +72,7 @@
                 </form>
             </div>
         </section>
-        <h3>&lt;/contact me&gt;</h3>
+
     </section>
 </template>
 
@@ -100,6 +100,8 @@ export default {
 #form-section {
     width: 100%;
     flex-direction: row;
+    font-family: $font-lexend;
+    ;
 
     form {
         div {

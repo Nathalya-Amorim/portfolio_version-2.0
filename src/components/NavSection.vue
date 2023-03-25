@@ -1,22 +1,5 @@
 <template>
-    <header class="row">
-        <!-- <b-navbar toggleable="true" type="dark">
-            <b-navbar-brand href="#">
-                <img class="logo" src="../../img/logo-svg.svg" alt="Nathalya's Logo" />
-            </b-navbar-brand>
-
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-            <b-collapse id="nav-collapse" is-nav>
-                <b-navbar-nav>
-                    <b-nav-item>This is a &#127828; menu </b-nav-item>
-                    <b-nav-item>&#129472;</b-nav-item>
-                    <b-nav-item>&#129363;</b-nav-item>
-                    <b-nav-item>&#129370;</b-nav-item>
-                    <b-nav-item>&#129367;</b-nav-item>
-                </b-navbar-nav>
-            </b-collapse>
-        </b-navbar> -->
+    <header class="row portfolio-header">
         <div class="col-6">
             <h1 class="hidden">Nathalya Menezes - Portfolio</h1>
             <img class="logo" src="../../img/logo-svg.svg" alt="Nathalya's Logo" width="25%">
@@ -245,5 +228,9 @@ input[type=checkbox]:checked~#overlay-button span:after {
     @include desktop {
         margin-left: 50px;
     }
+}
+
+.portfolio-header {
+    height: 80px;
 }
 </style>

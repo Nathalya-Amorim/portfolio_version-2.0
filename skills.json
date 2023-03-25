@@ -1,0 +1,62 @@
+[
+    {
+        "skill_id": 1,
+        "skill_icon": "assets/css_pink.svg",
+        "skill_title": "CSS",
+        "skill_order": 1
+    },
+    {
+        "skill_id": 10,
+        "skill_icon": "assets/html_pink.svg",
+        "skill_title": "HTML5",
+        "skill_order": 2
+    },
+    {
+        "skill_id": 3,
+        "skill_icon": "assets/vs_code_pink.svg",
+        "skill_title": "Visual Studio Code",
+        "skill_order": 3
+    },
+    {
+        "skill_id": 5,
+        "skill_icon": "assets/sass_pink.svg",
+        "skill_title": "Sass",
+        "skill_order": 4
+    },
+    {
+        "skill_id": 6,
+        "skill_icon": "assets/git_pink.svg",
+        "skill_title": "Git Hub",
+        "skill_order": 5
+    },
+    {
+        "skill_id": 7,
+        "skill_icon": "assets/xd_pink.svg",
+        "skill_title": "Sass",
+        "skill_order": 6
+    },
+    {
+        "skill_id": 4,
+        "skill_icon": "assets/ai_pink.svg",
+        "skill_title": "Illustrator",
+        "skill_order": 7
+    },
+    {
+        "skill_id": 9,
+        "skill_icon": "assets/ps_pink.svg",
+        "skill_title": "ps_pink.svg",
+        "skill_order": 8
+    },
+    {
+        "skill_id": 8,
+        "skill_icon": "assets/id_pink.svg",
+        "skill_title": "Indesign",
+        "skill_order": 9
+    },
+    {
+        "skill_id": 2,
+        "skill_icon": "assets/cinema4d_pink.svg",
+        "skill_title": "Cinema 4D",
+        "skill_order": 10
+    }
+]

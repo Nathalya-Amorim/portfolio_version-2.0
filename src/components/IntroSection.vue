@@ -15,15 +15,20 @@
                </div>
             </div>
             <b-row class="intro-resume">
-               <a href="https://example.com/path/to/resume.pdf" target="_blank">
+               <a href="/assets/portfolio_resume.pdf" target="_blank">
                   <b-button class="justify-content-center">View my resume</b-button>
                </a>
             </b-row>
-
          </div>
 
          <div class="col-md-6 center-block order-1 order-md-2">
             <b-img class="img-fluid" src=../../img/memoji-desktop.png></b-img>
+         </div>
+      </div>
+      <div class="scroll mt-40">
+         <div class="flex-center scroll-icon">
+            <h2>scroll</h2>
+            <h3>&#8595;</h3>
          </div>
       </div>
    </main>
@@ -39,14 +44,32 @@ export default {
 <style lang="scss">
 .intro-section {
 
+   height: calc(100vh - 80px);
+
    @include tablet {
-      margin-bottom: 250px;
+      // margin-bottom: 250px;
+   }
+
+   .scroll {
+      order: 4;
+      min-height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+
+      @include tablet {
+         order: 4;
+      }
+
+      @include desktop {
+         order: 4;
+      }
    }
 
    .name-label {
       font-family: "Chakra Petch", sans-serif;
       color: rgb(248, 249, 255);
-
+      margin-bottom: 0px;
    }
 
    .feature {
@@ -60,11 +83,7 @@ export default {
    }
 
    .intro-text {
-      text-align: center;
-
-      @include tablet {
-         text-align: left;
-      }
+      text-align: left;
 
    }
 
@@ -98,17 +117,34 @@ export default {
       color: white;
       font-size: 1.5em;
       font-family: "Chakra Petch", sans-serif;
+      font-weight: bold;
    }
 
    .cursor {
       color: white;
       font-size: 1.5em;
       font-family: "Chakra Petch", sans-serif;
-
+      font-weight: bold;
    }
 
    .intro-resume {
-      height: 250px;
+
+      margin-top: 25px;
+      margin-bottom: 25px;
+
+      @include tablet {
+         font-size: 1.5em;
+         height: 250px;
+      }
+
+
+      a {
+         margin: auto;
+
+         &:hover {
+            text-decoration: none;
+         }
+      }
    }
 
    .btn {

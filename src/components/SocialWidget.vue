@@ -4,18 +4,18 @@
         <div class="social-container">
             <!-- Social icons-->
             <a href="https://www.instagram.com/nathalyamorim87/" target="_blank" rel="noopener noreferrer">
-                <span class="social">
+                <span class="social d-flex">
                     <i class="fa-brands fa-instagram"></i>
                 </span>
             </a>
             <a href="https://www.linkedin.com/in/nathalya-menezes-0b1a37130/" target="_blank" rel="noopener noreferrer">
-                <span class="social">
+                <span class="social d-flex">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </span>
             </a>
 
             <a href="https://github.com/Nathalya-Amorim" target="_blank" rel="noopener noreferrer">
-                <span class="social">
+                <span class="social d-flex">
                     <i class="fa-brands fa-github"></i>
                 </span>
             </a>
@@ -35,8 +35,8 @@ export default {
 
     @include desktop {
         display: flex;
-        position: sticky;
-        bottom: 10px;
+        position: fixed;
+        bottom: 0px;
         left: 10px;
         width: 30px;
 
