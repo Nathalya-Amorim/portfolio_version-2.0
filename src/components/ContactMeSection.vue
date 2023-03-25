@@ -1,12 +1,12 @@
 <template>
     <section id="contact-main" class="order-3 contact-anchor">
         <h2 class="hidden">Contact section</h2>
-        <h3>&lt;contact me&gt;</h3>
+        <h3 v-if="hideSocial == false">&lt;contact me&gt;</h3>
         <section id="form-section">
             <h2 class="hidden">Form section</h2>
             <div class="row">
-                <div class="col-md-8 mb-20" data-aos="fade-right" data-aos-ease="ease" data-aos-duration="500"
-                    data-aos-delay="500">
+                <div :class="{ 'col-md-8 mb-20': hideSocial == false, 'col-md-12 mb-20': hideSocial == true }"
+                    data-aos="fade-right" data-aos-ease="ease" data-aos-duration="500" data-aos-delay="500">
                     <span>
                         You got a question or purpose, or just want to say “hello”? <br>Go ahead. I will be happy to
                         answer you.
@@ -18,8 +18,8 @@
                         <!-- An error message will be displayed here after the form response. -->
                     </span>
                 </div>
-                <div class="social-links col-md-4" data-aos="fade-left" data-aos-ease="ease" data-aos-duration="500"
-                    data-aos-delay="500">
+                <div v-if="hideSocial == false" class="social-links col-md-4" data-aos="fade-left" data-aos-ease="ease"
+                    data-aos-duration="500" data-aos-delay="500">
                     <h2 class="hidden">Contact contacts</h2>
                     <span>Feeling social? Find me on these online spaces too!</span>
                     <ul class="mt-20">
@@ -31,7 +31,8 @@
                         </li>
                     </ul>
                 </div>
-                <form action="/includes/mail/mail.php" method="POST" id="mail-form" ref="mail-form" class="col-md-8">
+                <form action="/includes/mail/mail.php" method="POST" id="mail-form" ref="mail-form"
+                    :class="{ 'col-md-8': hideSocial == false, 'col-md-12 mt-4': hideSocial == true }">
                     <div class="form-row" data-aos="fade-right" data-aos-ease="ease" data-aos-duration="500"
                         data-aos-delay="500">
                         <div class="form-group col-6">
@@ -78,7 +79,13 @@
 
 <script>
 export default {
-    name: 'ContactMeSection'
+    name: 'ContactMeSection',
+    props: {
+        hideSocial: {
+            type: Boolean,
+            default: false
+        }
+    }
 }
 </script>
 
@@ -94,6 +101,7 @@ export default {
 
     span {
         font-size: 1.1em;
+        font-weight: 500;
     }
 }
 
@@ -110,9 +118,11 @@ export default {
             input[type="text"],
             input[type="email"],
             input[type="tel"] {
-                background: transparent;
-                color: #fff;
-                border-color: rgb(255, 255, 255, 0.5);
+                // background: transparent;
+                background-color: #212d3c;
+                // color: #fff;
+                border-color: rgb(255, 255, 255, 0.0);
+                color: rgba(249, 37, 114, 0.5);
             }
 
 
@@ -121,7 +131,7 @@ export default {
         .submit-contact-btn {
             input {
                 width: 200px;
-
+                font-weight: 600;
             }
         }
 

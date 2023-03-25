@@ -1,6 +1,7 @@
 <script>
 import axios from 'axios';
 import ColorSample from '../components/ColorSample.vue';
+import ContactMeSection from '../components/ContactMeSection.vue';
 import ProcessCard from '../components/ProcessCard.vue';
 import WorkNavigationBar from '../components/WorkNavigationBar.vue';
 
@@ -35,11 +36,15 @@ export default {
         },
         scrollToTop() {
             window.scrollTo(0, 0);
+        },
+        showModal() {
+            console.log("TEST")
+            this.$refs['my-modal'].show();
         }
 
 
     },
-    components: { ColorSample, ProcessCard, WorkNavigationBar }
+    components: { ColorSample, ProcessCard, WorkNavigationBar, ContactMeSection }
 }
 </script>
 
@@ -53,7 +58,7 @@ export default {
             </div>
             <!-- End Hero -->
             <div class="row container">
-                <span class="overview-tag col-12 mt-5">&lt;project overview&gt;</span>
+                <!-- <span class="overview-tag col-12 mt-5">&lt;project overview&gt;</span> -->
                 <div class="row mb-5 mt-5">
                     <!-- Start Project Description -->
                     <div class="col-md-6">
@@ -116,15 +121,12 @@ export default {
                 <!-- Start Problem Statement -->
                 <div class="row mb-5 mt-5">
                     <div class="col-md-6">
-
-
                         <div class="col-12">
                             <img class="illustrateImage " src="/assets/problem.svg" alt="Problem Image">
                         </div>
-
                     </div>
-                    <div class="col-md-6">
-                        <div class="col-12">
+                    <div class="col-md-6 d-flex">
+                        <div class="col-12 m-auto">
                             <span class="title pink">Problem</span><span class="title green"> Statement</span>
                             <p> Quatro, it is a brand established in 1983, needs a complete rebranding to stay
                                 relevant
@@ -141,12 +143,9 @@ export default {
 
                 <!-- Start Solution Statement -->
                 <div class="row mb-5 mt-5">
-                    <div class="col-md-6">
-
-                        <div class="col-12">
+                    <div class="col-md-6 d-flex">
+                        <div class="col-12 m-auto">
                             <span class="title pink">Solution</span><span class="title green"> Statement</span>
-                        </div>
-                        <div class="col-12">
                             <p> The solution is to identify the visual elements that are most appealing to the
                                 target
                                 audience, including colors, shapes, and typography. This will ensure that the new brand
@@ -177,14 +176,14 @@ export default {
                 <div class=" col-12 mb-5 mt-5">
                     <span class="title pink">01. Project</span><span class="title green"> Process</span>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <p>
                         The design process helps to solve any kind of problem and put the user at the centre at the analysis
                         of their needs. To make a good experience and be satisfied with using any product or service to
                         achieve their goal.
                     </p>
                 </div>
-                <div class=" row col-12">
+                <div class="row">
                     <ProcessCard title="Discover" type="discover" />
                     <ProcessCard title="Define" type="define" />
                     <ProcessCard title="Ideat" type="ideat" />
@@ -341,7 +340,7 @@ export default {
 
                 <!-- Start Advertisment -->
                 <div class="col-12 mb-5 mt-5">
-                    <span class="title pink">14.Advertisment</span><span class="title green">Campaign</span>
+                    <span class="title pink">14. Ads</span>
                 </div>
 
                 <div class="col-12 mb-3">
@@ -367,7 +366,7 @@ export default {
 
                 <!-- Start Video  -->
                 <div class="col-12 mb-5 mt-5">
-                    <span class="title pink">15. Promotional Video </span><span class="title green">Flow</span>
+                    <span class="title pink">15. Video </span><span class="title green">Campaign</span>
                 </div>
 
                 <div class="col-md-12">
@@ -378,22 +377,35 @@ export default {
                 </div>
                 <!-- End Video-->
 
-                <!-- Start See Live  -->
+                <!-- Start Prototype  -->
                 <div class="col-12 mb-5 mt-5">
-                    <span class="title pink">16.Proto </span><span class="title green">type</span>
+                    <span class="title pink">16. Proto</span><span class="title green">type</span>
                 </div>
 
                 <div class="col-12">
-                    <img class="full-width" src="/assets/quatro_seeLive.jpg" alt="Quatro in a phone and computer">
+                    <img class="full-width" src="/assets/quatro_prototype.jpg" alt="Quatro in a phone and computer">
+                </div>
+                <!-- End Prototype-->
+
+
+                <!-- Start See Live  -->
+                <div class="col-12 mb-5 mt-5">
+                    <span class="title pink">17. See</span><span class="title green"> Live</span>
+                </div>
+
+                <div class="col-12">
+                    <a href="https://quatro.nathalyamenezes.ca/" target="_blank">
+                        <img class="full-width" src="/assets/quatro_seeLive.jpg" alt="Quatro in a phone and computer">
+                    </a>
+
                 </div>
                 <!-- End See Live-->
 
-
-                <span class="overview-tag col-12 mt-5 mb-5">&lt;/project overview&gt;</span>
+                <span class="overview-tag col-12 mt-5 mb-5"></span>
 
                 <!-- Start Thanks  -->
-                <div class="col-12">
-                    <img src="/assets/contact_me.png" alt="Memoji">
+                <div class="col-12 d-flex">
+                    <img src="/assets/contact_me.png" alt="Memoji" class="m-auto">
                 </div>
                 <div class="col-12 thanks">
                     <span class="row highlight">Thanks for journeying through my project!</span>
@@ -401,7 +413,8 @@ export default {
                         together</span>
                 </div>
                 <div class="col-12 thanks d-flex mt-5">
-                    <div class="m-auto"><b-button class="justify-content-center">OF COURSE</b-button></div>
+                    <div class="m-auto"><b-button class="justify-content-center" @click="showModal">OF COURSE</b-button>
+                    </div>
                 </div>
 
                 <!-- End Thanks  -->
@@ -1661,7 +1674,10 @@ export default {
             </div>
             <WorkNavigationBar :previous-page="9" :next-page="1" :show-home-as-icon="true" @navigate="onNavigate" />
         </section>
-
+        <b-modal ref="my-modal" hide-footer title="&lt;contact me&gt;" content-class="modal-content-custom"
+            header-border-variant="success">
+            <ContactMeSection :hide-social="true" />
+        </b-modal>
     </main>
 </template>
 <style lang="scss" scoped>
@@ -1716,6 +1732,7 @@ main {
     p {
         color: $white;
         font-family: $font-lexend;
+        font-weight: 500;
     }
 
     .work1 {
@@ -1729,7 +1746,11 @@ main {
 
         .title {
             font-weight: bold;
-            font-size: 1.7em;
+            font-size: 2.0rem;
+
+            @include tablet {
+                font-size: 2.5em;
+            }
 
             &.pink {
                 color: $pink;
@@ -1819,18 +1840,29 @@ main {
                 color: $pink;
                 font-weight: bold;
                 font-size: 1.5em;
+
+                @include tablet {
+                    font-size: 2em;
+                }
             }
 
             &.normal {
                 color: $white;
                 font-weight: bold;
+                font-size: 1.2em;
+
+                @include tablet {
+                    font-size: 1.5em;
+                }
             }
+        }
+
+        .btn {
+            font-weight: 600;
         }
     }
 
-
-
-    FONTS .exoFontLight {
+    .exoFontLight {
         font-family: 'Exo 2', sans-serif;
         font-weight: 400;
     }
@@ -1884,5 +1916,11 @@ main {
     .loraFont {
         font-family: $font-body;
     }
+
+
+}
+
+.modal-content-custom {
+    background-color: $color-bg;
 }
 </style>

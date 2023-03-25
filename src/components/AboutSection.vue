@@ -6,7 +6,7 @@
                 <h3 class="about-title mb-30">&lt;about&gt;</h3>
 
                 <p class="p-about mb-20">Hello there! You stumbled upon me!<br></p>
-                <p class="p-about mb-20">I’m <span class="span-pink">Nathalya Menezes</span>, a <span
+                <p class="p-about mb-20">I’m <span class="span-pink">Nathalya Menezes</span>, an <span
                         class="span-green">UX/UI Web Designer</span>,
                     currently residing in London, but hailing from Brazil.
                 </p>
@@ -52,6 +52,7 @@ export default {
 .p-about {
     line-height: 1.5em;
     font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
 
 }
 
@@ -163,6 +164,7 @@ export default {
 
 .secondParagraph {
     font-family: $font-lexend;
+    font-weight: 500;
 }
 
 .profile-pic {
