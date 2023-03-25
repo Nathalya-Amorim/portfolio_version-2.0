@@ -1,16 +1,26 @@
 <template>
     <div class="row container-fluid projects-navbar m-0 p-0 mt-5">
-        <div v-if="showHomeAsButton == true" class="col-6 nav-button bg-color-pink d-flex" @click="goHome()">
-            <span class="">Back to home</span>
+        <div v-if="showHomeAsButton == true" class="col-12 col-md-6 nav-button bg-color-pink d-flex btn-home"
+            @click="goHome()">
+            <span><i class="fa-solid fa-arrow-left"></i> Home</span>
         </div>
-        <div v-if="showHomeAsIcon == true" class="col-6 nav-button bg-color-lime-green d-flex" @click="goTo(previousPage)">
-            <span>Previous project</span>
+
+        <div v-if="showHomeAsIcon == true" class="col-12 col-md-6 nav-button bg-color-lime-green d-flex btn-back"
+            @click="goTo(previousPage)">
+            <span><i class="fa-solid fa-arrow-left"></i> Back</span>
         </div>
+
         <div v-if="showHomeAsIcon == true" class="home-icon bg-color-pink" @click="goHome()">
             <span><i class="fa-solid fa-house"></i></span>
         </div>
-        <div class="col-6 nav-button bg-color-lime-green d-flex" @click="goTo(nextPage)">
-            <span>Next project</span>
+
+        <div v-if="showHomeAsIcon == true" class="col-12 col-md-6 nav-button bg-color-pink d-flex btn-home home-icon-mobile"
+            @click="goHome()">
+            <span><i class="fa-solid fa-house"></i></span>
+        </div>
+
+        <div class="col-12 col-md-6 nav-button bg-color-lime-green d-flex btn-next" @click="goTo(nextPage)">
+            <span>Next <i class="fa-solid fa-arrow-right"></i></span>
         </div>
     </div>
 </template>
@@ -75,6 +85,7 @@ export default {
                 background-color: $lime-green;
             }
         }
+
     }
 
     span {
@@ -93,14 +104,20 @@ export default {
         margin: 0;
         position: absolute;
         height: 100px;
-        width: 100px;
+        width: 70px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
-        display: flex;
         cursor: pointer;
         transition: all ease-in-out .3s;
+        display: none;
+
+        @include tablet {
+            // font-size: 2em;
+            width: 100px;
+            display: flex;
+        }
 
         span {
             z-index: 10;
@@ -120,6 +137,12 @@ export default {
         &:hover {
             -webkit-box-shadow: 0px 0px 20px 2px rgb(249 37 114) !important;
             box-shadow: 0px 0px 20px 2px rgb(249 37 114) !important;
+        }
+    }
+
+    .btn-home.home-icon-mobile {
+        @include tablet {
+            display: none !important;
         }
     }
 }

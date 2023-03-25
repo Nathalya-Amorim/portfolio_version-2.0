@@ -17,4 +17,29 @@
     text-align: center;
   }
 }
+
+.modal-content {
+  background-color: $color-bg !important;
+
+  .close {
+    color: $white;
+  }
+
+  .border-success {
+    border: 0px;
+  }
+
+  .modal-header {
+    padding: 0px;
+  }
+
+  .modal-body {
+    padding: 0px;
+  }
+
+  .modal-title {
+    font-size: 2.0rem;
+  }
+
+}
 </style>

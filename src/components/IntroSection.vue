@@ -111,6 +111,7 @@ export default {
       border-radius: 5px;
       padding-left: 5px;
       margin-right: 8px;
+      font-weight: bold;
    }
 
    .text {
@@ -143,6 +144,10 @@ export default {
 
          &:hover {
             text-decoration: none;
+         }
+
+         button {
+            font-weight: 600;
          }
       }
    }

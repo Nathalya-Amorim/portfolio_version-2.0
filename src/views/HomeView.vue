@@ -27,12 +27,17 @@ import SocialWidget from '../components/SocialWidget.vue';
       <h2 class="hidden">Footer</h2>
       <p> &copy; Nathalya Menezes 2023</p>
     </footer>
-    </main>
   </div>
 </template>
 <style lang="scss">
 .home-content {
   max-width: 1280px;
   margin: auto;
+}
+
+footer {
+  p {
+    font-family: $font-lexend;
+  }
 }
 </style>
