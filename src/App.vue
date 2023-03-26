@@ -41,5 +41,14 @@
     font-size: 2.0rem;
   }
 
+  // .carousel-inner {
+  //   height: 100% !important;
+  // }
+
 }
+
+// #carousel-fade___BV_inner_,
+// .carousel-inner {
+//   height: 100%;
+// }
 </style>
