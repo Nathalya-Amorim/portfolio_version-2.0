@@ -59,6 +59,10 @@ export default {
 .about-title {
     font-size: 2.5em;
     color: rgb(167, 226, 44);
+
+    &.mb-30 {
+        margin-bottom: 30px;
+    }
 }
 
 

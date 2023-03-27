@@ -60,7 +60,7 @@
 
                         <div class="form-group col-12">
                             <!-- <label for="message"> Message* </label> -->
-                            <textarea ref="message" class="form-control" name="message" id="message" cols="30" rows="1"
+                            <textarea ref="message" class="form-control" name="message" id="message" cols="30" rows="5"
                                 placeholder="Message*"></textarea>
                         </div>
 
@@ -96,7 +96,7 @@ export default {
 
     h3 {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     span {

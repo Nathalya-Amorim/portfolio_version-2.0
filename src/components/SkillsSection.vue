@@ -8,7 +8,6 @@
             <SkillThumb v-for="skill in skillsData" :skill="skill" v-bind:key="skill.id"></SkillThumb>
         </div>
 
-
     </section>
 </template>
 
@@ -70,11 +69,15 @@ export default {
         margin: auto;
         padding-left: 50px;
         padding-right: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
 
         @include tablet {
             grid-template-columns: repeat(5, 1fr);
         }
     }
+
+    margin-top: 70px;
 
 }
 </style>

@@ -55,6 +55,7 @@ export default {
 .my-work {
     h3 {
         width: 100%;
+        margin-bottom: 30px;
     }
 
     .work-picture {
