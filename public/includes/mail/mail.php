@@ -4,8 +4,10 @@
     header("Access-Control-Allow-Origin: *");
     header("Content-Type: application/json; charset=UTF-8");
 
+    $data = json_decode(file_get_contents('php://input'), true);
+
     //Checks for firstname and cleans the text
-    if($_POST){
+    if($data){
         $receipient = "contact@nathalyamenezes.ca";
         $subject = " just made contact! Respond ASAP!";
         $subject_response = "Hi! This is an automatic response.";
@@ -19,8 +21,8 @@
         $empty_fields = false;
         $fail = array();
         //Checks for firstname and cleans the text
-        if(isset($_POST['firstname']) && !empty($_POST['firstname'])) {
-            $visitor_name .= filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
+        if(isset($data['firstname']) && !empty($data['firstname'])) {
+            $visitor_name .= filter_var($data['firstname'], FILTER_SANITIZE_STRING);
         }else{
             $empty_fields = true;
             array_push($fail, "firstname");
@@ -28,8 +30,8 @@
 
         //Checks for lastname and cleans the text
 
-        if(isset ($_POST['lastname']) && !empty($_POST['lastname'])) {
-            $visitor_name .=" ".filter_var($_POST['lastname'],
+        if(isset ($data['lastname']) && !empty($data['lastname'])) {
+            $visitor_name .=" ".filter_var($data['lastname'],
             FILTER_SANITIZE_STRING);
         }else{
             $empty_fields = true;
@@ -37,8 +39,8 @@
         }
 
        //CHECK our message and cleans it 
-        if(isset($_POST['message']) && !empty($_POST['message'])) {
-            $clean = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+        if(isset($data['message']) && !empty($data['message'])) {
+            $clean = filter_var($data['message'], FILTER_SANITIZE_STRING);
             $message = htmlspecialchars($clean);
         }else{
             $empty_fields = true;
@@ -46,9 +48,9 @@
         }
 
         //Checks for email and cleans the text
-        if(isset($_POST['email']) && !empty($_POST['email'])){
-            if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-                $visitor_email .= str_replace(array("\r", "\n", "%0p", "%0a", "%0d"), "", $_POST['email']);
+        if(isset($data['email']) && !empty($data['email'])){
+            if(filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+                $visitor_email .= str_replace(array("\r", "\n", "%0p", "%0a", "%0d"), "", $data['email']);
                 $visitor_email .= filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
             } else {
                 array_push($fail, "email");

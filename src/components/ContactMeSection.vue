@@ -1,3 +1,6 @@
+<script setup>
+import axios from 'axios';
+</script >
 <template>
     <section id="contact-main" class="order-3 contact-anchor">
         <h2 class="hidden">Contact section</h2>
@@ -10,12 +13,6 @@
                     <span>
                         You got a question or purpose, or just want to say “hello”? <br>Go ahead. I will be happy to
                         answer you.
-                    </span>
-                    <span class="info info-success" ref="info-success-box">
-                        <!-- A success message will be displayed here after the form response. -->
-                    </span>
-                    <span class="info info-error" ref="info-error-box">
-                        <!-- An error message will be displayed here after the form response. -->
                     </span>
                 </div>
                 <div v-if="hideSocial == false" class="social-links col-md-4" data-aos="fade-left" data-aos-ease="ease"
@@ -31,42 +28,51 @@
                         </li>
                     </ul>
                 </div>
-                <form action="/includes/mail/mail.php" method="POST" id="mail-form" ref="mail-form"
+                <div v-if="successMsg != '' || errorMsg != ''" class="col-12 mb-4">
+                    <span v-if="successMsg != ''" class="info info-success" ref="info-success-box">
+                        {{ successMsg }}
+                    </span>
+                    <span v-if="errorMsg != ''" class="info info-error" ref="info-error-box">
+                        {{ errorMsg }}
+                    </span>
+                </div>
+
+                <form @submit.prevent="processMail"
                     :class="{ 'col-md-8': hideSocial == false, 'col-md-12 mt-4': hideSocial == true }">
                     <div class="form-row" data-aos="fade-right" data-aos-ease="ease" data-aos-duration="500"
                         data-aos-delay="500">
                         <div class="form-group col-6">
                             <!-- <label for="firstname">First Name*</label> -->
-                            <input ref="firstname" class="form-control" type="text" id="firstname" name="firstname"
-                                required="required" placeholder="First Name">
+                            <input v-model="formData.firstname" class="form-control" type="text" id="firstname"
+                                name="firstname" required="required" placeholder="First Name">
                         </div>
 
                         <div class="form-group col-6">
                             <!-- <label for="lastname">Last Name *</label> -->
-                            <input ref="lastname" class="form-control" type="text" id="lastname" name="lastname" required
-                                placeholder="Last Name">
+                            <input v-model="formData.lastname" class="form-control" type="text" id="lastname"
+                                name="lastname" required placeholder="Last Name">
                         </div>
 
                         <div class="form-group col-6">
                             <!-- <label for="email">Email*</label> -->
-                            <input ref="email" class="form-control" type="email" id="email" name="email" required
-                                placeholder="Email">
+                            <input v-model="formData.email" class="form-control" type="email" id="email" name="email"
+                                required placeholder="Email">
                         </div>
 
                         <div class="form-group col-6">
                             <!-- <label for="phone">Phone</label> -->
-                            <input ref="phone" class="form-control" type="tel" id="phone" name="phone" placeholder="Phone">
+                            <input v-model="formData.phone" class="form-control" type="tel" id="phone" name="phone"
+                                placeholder="Phone">
                         </div>
 
                         <div class="form-group col-12">
                             <!-- <label for="message"> Message* </label> -->
-                            <textarea ref="message" class="form-control" name="message" id="message" cols="30" rows="5"
-                                placeholder="Message*"></textarea>
+                            <textarea v-model="formData.message" class="form-control" name="message" id="message" cols="30"
+                                rows="5" placeholder="Message*"></textarea>
                         </div>
 
                         <div class="col-4 submit-contact-btn">
-                            <input @click.prevent="processMail" ref="btn-submit-contact" type="submit" class="btn"
-                                value="SAY HELLO">
+                            <input type="submit" class="btn" value="SAY HELLO" :disabled="submitted">
                         </div>
                     </div>
 
@@ -75,15 +81,55 @@
         </section>
 
     </section>
-</template>
+</template >
 
 <script>
 export default {
     name: 'ContactMeSection',
+    data() {
+        return {
+            formData: {
+                firstname: '',
+                lastname: '',
+                email: '',
+                message: '',
+                subject: ''
+            },
+            errorMsg: '',
+            successMsg: '',
+            loading: false,
+            submitted: false
+        }
+    },
     props: {
         hideSocial: {
             type: Boolean,
             default: false
+        }
+    },
+    methods: {
+        processMail(event) {
+            this.loading = true;
+
+            if (!this.formData.firstname || !this.formData.lastname || !this.formData.message || !this.formData.email) {
+                this.errorMsg = 'Please fill all required fields.';
+                this.loading = false;
+                this.successMsg = '';
+            } else {
+                axios.post('/includes/mail/mail.php', this.formData)
+                    .then(res => {
+                        this.loading = false;
+                        this.submitted = true;
+                        this.successMsg = res.data.message;
+                        this.errorMsg = '';
+                    })
+                    .catch(err => {
+                        this.loading = false;
+                        this.submitted = false;
+                        this.errorMsg = err.data;
+                        this.successMsg = '';
+                    });
+            }
         }
     }
 }
@@ -120,9 +166,8 @@ export default {
             input[type="tel"] {
                 // background: transparent;
                 background-color: #212d3c;
-                // color: #fff;
+                color: #fff;
                 border-color: rgb(255, 255, 255, 0.0);
-                color: rgba(249, 37, 114, 0.5);
             }
 
 
@@ -161,11 +206,11 @@ export default {
     }
 
     .info.info-error {
-        display: none;
+        // display: none;
     }
 
     .info.info-success {
-        display: none;
+        // display: none;
     }
 
     span {
