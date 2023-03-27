@@ -1,5 +1,4 @@
 <script>
-import axios from 'axios';
 import ColorSample from '../components/ColorSample.vue';
 import ContactMeSection from '../components/ContactMeSection.vue';
 import ProcessCard from '../components/ProcessCard.vue';
@@ -8,11 +7,7 @@ import WorkNavigationBar from '../components/WorkNavigationBar.vue';
 export default {
     name: "WorkView",
     mounted() {
-        // axios.get("http://localhost:3000/projects/" + this.id)
-        //     .then(res => {
-        //         this.project = res.data;
-        //     })
-        //     .catch(err => console.log("ERROR: Could not load works data. [ " + err) + " ]");
+
     },
     data() {
         return {
@@ -51,14 +46,17 @@ export default {
 <template>
     <main id="body" class="work-body">
         <section v-if="id == '1'" class="work1">
-            <h2 class="hidden">Projects </h2>
+            <h2 class="hidden">Project Quatro Sparklign Water</h2>
             <!-- Start Hero -->
             <div class="hero work-hero quatro">
-                <img class="work-hero-img" src="/assets/quatro_hero.gif" alt="Quatro Hero Image">
+                <img class="work-hero-img" src="/assets/quatro_hero.jpg" alt="Quatro Hero Image">
             </div>
             <!-- End Hero -->
             <div class="row container">
-                <!-- <span class="overview-tag col-12 mt-5">&lt;project overview&gt;</span> -->
+                <span class="scroll-down-icon">
+                    <i class="fa-solid fa-arrow-down fa-bounce"></i>
+                </span>
+
                 <div class="row mb-5 mt-5">
                     <!-- Start Project Description -->
                     <div class="col-md-6">
@@ -109,7 +107,7 @@ export default {
                                 <img class="tool-icon" src='/assets/icon_ps.svg' alt="Adobe Photoshop Icon">
                                 <img class="tool-icon" src='/assets/icon_ai.svg' alt="Adobe Illustrator Icon">
                                 <img class="tool-icon" src='/assets/icon_c4d.svg' alt="Cinema 4D Icon">
-                                <img class="tool-icon" src='/assets/icon_github.svg' alt="Git Hub Icon">
+                                <img class="tool-icon" src='/assets/icon_gitHub.svg' alt="Git Hub Icon">
                                 <img class="tool-icon" src='/assets/icon_html.svg' alt="HTML Icon">
                                 <img class="tool-icon" src='/assets/icon_css3.svg' alt="CSS Icon">
                                 <img class="tool-icon" src='/assets/icon_javascript.svg' alt="JavaScript Icon">
@@ -282,7 +280,7 @@ export default {
                     </div>
 
                     <div class="col-12">
-                        <img class="full-width" src="/assets/quatro_versions.png" alt="Logo Versions">
+                        <img class="full-width" src="/assets/quatro_versions.jpg" alt="Logo Versions">
                     </div>
                 </div>
                 <!-- End Logo Versions-->
@@ -301,7 +299,7 @@ export default {
                         <p class="cooperFont typoSize">0 1 2 3 4 5 6 7 8 9 </p>
                     </div>
                     <div class="col-12 col-md-6">
-                        <span class="title pink">TW Cen MT Regular</span>
+                        <span class="twTitle pink">TW Cen MT Regular</span>
                         <p class="tw-font typoSize">A B C D E F G H I J K L M N <br>O P Q R S T U V W X Y Z</p>
                         <p class="tw-font typoSize">0 1 2 3 4 5 6 7 8 9 </p>
                     </div>
@@ -491,15 +489,16 @@ export default {
         </section>
         <!-- WE ARE ALL HOCKEY -->
         <section v-if="id == '2'" class="work1">
+            <h2 class="hidden">Project We Are All Hockey</h2>
             <!-- Start Hero -->
-            <b-carousel id="carousel-fade" style="text-shadow: 0px 0px 2px #000" fade indicators img-width="1024"
-                img-height="480" :interval="3000">
-                <b-carousel-slide img-src="/assets/hockey_01.png"></b-carousel-slide>
-                <b-carousel-slide img-src="/assets/hockey_02.png"></b-carousel-slide>
-                <b-carousel-slide img-src="/assets/hockey_03.png"></b-carousel-slide>
-            </b-carousel>
+            <div class="hero work-hero hockey">
+                <img class="work-hero-img" src="/assets/hockey_hero.jpg" alt="We Are All Hockey Image">
+            </div>
             <!-- End Hero -->
             <div class="row container">
+                <span class="scroll-down-icon">
+                    <i class="fa-solid fa-arrow-down fa-bounce"></i>
+                </span>
                 <!-- Start Project Description -->
                 <div class="row mb-5 mt-5">
                     <div class="col-md-6">
@@ -546,7 +545,7 @@ export default {
                                 <img class="tool-icon" src='/assets/icon_ps.svg' alt="Adobe Photoshop Icon">
                                 <img class="tool-icon" src='/assets/icon_ai.svg' alt="Adobe Illustrator Icon">
                                 <img class="tool-icon" src='/assets/icon_figma.svg' alt="Figma Icon">
-                                <img class="tool-icon" src='/assets/icon_github.svg' alt="Git Hub Icon">
+                                <img class="tool-icon" src='/assets/icon_gitHub.svg' alt="Git Hub Icon">
                                 <img class="tool-icon" src='/assets/icon_vuejs.svg' alt="Vue Icon">
                                 <img class="tool-icon" src='/assets/icon_bootstrap.svg' alt="Bootstrap Icon">
                                 <img class="tool-icon" src='/assets/icon_nodejs.svg' alt="Node Js Icon">
@@ -682,7 +681,7 @@ export default {
                     </div>
 
                     <div class="col-12 col-md-6">
-                        <span class="title pink robotoFontR">Roboto Regular</span>
+                        <span class=" robotoTitle pink robotoFontR">Roboto Regular</span>
                         <p class="robotoFontR typoSize">A B C D E F G H I J K L M N <br>O P Q R S T U V W X Y Z</p>
                         <p class="robotoFontR typoSize">0 1 2 3 4 5 6 7 8 9 </p>
                     </div>
@@ -809,17 +808,16 @@ export default {
 
         <!-- BANTING HOUSE PROJECT -->
         <section v-if="id == '3'" class="work1">
-
+            <h2 class="hidden">Project Banting House</h2>
             <!-- Start Hero -->
-            <b-carousel id="carousel-fade" class="hero-carousel" fade indicators img-width="1024" img-height="480"
-                :interval="3000">
-                <b-carousel-slide img-src="/assets/banting_01.png"></b-carousel-slide>
-                <b-carousel-slide img-src="/assets/banting_02.png"></b-carousel-slide>
-                <b-carousel-slide img-src="/assets/banting_03.png"></b-carousel-slide>
-            </b-carousel>
+            <div class="hero work-hero banting">
+                <img class="work-hero-img" src="/assets/banting_hero.jpg" alt="Banting House Image">
+            </div>
             <!-- End Hero -->
-
             <div class="row container">
+                <span class="scroll-down-icon">
+                    <i class="fa-solid fa-arrow-down fa-bounce"></i>
+                </span>
                 <!-- Start Project Description -->
                 <div class="row mb-5 mt-5">
                     <div class="col-md-6">
@@ -876,7 +874,7 @@ export default {
                                 <img class="tool-icon" src='/assets/icon_ps.svg' alt="Adobe Photoshop Icon">
                                 <img class="tool-icon" src='/assets/icon_ai.svg' alt="Adobe Illustrator Icon">
                                 <img class="tool-icon" src='/assets/icon_xd.svg' alt="Adobe XD Icon">
-                                <img class="tool-icon" src='/assets/icon_github.svg' alt="Git Hub Icon">
+                                <img class="tool-icon" src='/assets/icon_gitHub.svg' alt="Git Hub Icon">
                                 <img class="tool-icon" src='/assets/icon_wordpress.svg' alt="Vue Icon">
                             </div>
                         </div>
@@ -1002,7 +1000,7 @@ export default {
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <span class="title pink openFontR typoSize">Open Sans Regular</span>
+                        <span class="openTitle pink openFontR typoSize">Open Sans Regular</span>
                         <p class="  openFontR typoSize">A B C D E F G H I J K L M N<br> O P Q R S T U V W X Y Z</p>
                         <p class="openFontR typoSize">0 1 2 3 4 5 6 7 8 9 </p>
                     </div>
@@ -1086,13 +1084,15 @@ export default {
         <!-- CECI PROJECT -->
         <section v-if="id == '4'" class="work1">
             <!-- Start Hero -->
-            <b-carousel id="carousel-fade" style="text-shadow: 0px 0px 2px #000" fade indicators img-width="1024"
-                img-height="480" :interval="3000">
-                <b-carousel-slide img-src="/assets/ceci_h01.png"></b-carousel-slide>
-                <b-carousel-slide img-src="/assets/ceci_h02.png"></b-carousel-slide>
-            </b-carousel>
+            <h2 class="hidden">Project Ceci</h2>
+            <div class="hero work-hero ceci">
+                <img class="work-hero-img" src="/assets/ceci_hero.jpg" alt="Ceci Image">
+            </div>
             <!-- End Hero -->
             <div class="row container">
+                <span class="scroll-down-icon">
+                    <i class="fa-solid fa-arrow-down fa-bounce"></i>
+                </span>
                 <div class="row mb-5 mt-5">
                     <!-- Start Project Description -->
                     <div class="col-md-6">
@@ -1207,7 +1207,7 @@ export default {
                     </div>
 
                     <div class="col-12 mb-3">
-                        <img class="full-width" src="/assets/ceci_mockup01.png" alt="Social Media Advertisment">
+                        <img class="full-width" src="/assets/ceci_mockup01.jpg" alt="Social Media Advertisment">
                     </div>
 
                     <div class="col-12 mb-3">
@@ -1262,13 +1262,17 @@ export default {
 
         <!-- START DEMO REEL PROJECT  -->
         <section v-if="id == '5'" class="work1">
+            <h2 class="hidden">Project Demo Reel</h2>
             <!-- Start Hero -->
-            <div class="hero work-hero">
-                <img class="work-hero-img-ceci" src="/assets/demoReel_hero.png" alt="">
+            <div class="hero work-hero demo-reel">
+                <img class="work-hero-img" src="/assets/demoReel_hero.jpg" alt="Demo Reel Image">
             </div>
             <!-- End Hero -->
 
             <div class="row container">
+                <span class="scroll-down-icon">
+                    <i class="fa-solid fa-arrow-down fa-bounce"></i>
+                </span>
                 <div class="row mt-5 mb-5">
                     <!-- Start Project Description -->
                     <div class="col-md-6">
@@ -1395,15 +1399,19 @@ export default {
             <WorkNavigationBar :previous-page="4" :next-page="6" :show-home-as-icon="true" @navigate="onNavigate" />
         </section>
 
-        <!-- Portfolio PORJECT -->
+        <!-- Portfolio PROJECT -->
         <section v-if="id == '6'" class="work1">
+            <h2 class="hidden">Project Portfolio Site</h2>
             <!-- Start Hero -->
-            <div class="hero work-hero">
-                <img class="work-hero-img-ceci" src="/assets/portfolio_hero.png" alt="">
+            <div class="hero work-hero portfolio-site">
+                <img class="work-hero-img" src="/assets/portfolio_hero.jpg" alt="Portfolio Image">
             </div>
             <!-- End Hero -->
 
             <div class="row container">
+                <span class="scroll-down-icon">
+                    <i class="fa-solid fa-arrow-down fa-bounce"></i>
+                </span>
                 <!-- Start Project Description -->
                 <div class="row mt-5 mb-5">
                     <div class="col-md-6">
@@ -1470,7 +1478,7 @@ export default {
                     </div>
 
                     <div class="col-12">
-                        <img class="full-width" src="/assets/portfoli_logoVersion.png" alt="Logo Versions">
+                        <img class="full-width" src="/assets/portfoli_logoVersion.jpg" alt="Logo Versions">
                     </div>
                 </div>
                 <!-- End Logo Versions-->
@@ -1556,13 +1564,17 @@ export default {
 
         <!-- //BE AWARE PROJECT -->
         <section v-if="id == '7'" class="work1">
+            <h2 class="hidden">Project Be Aware Campaign</h2>
             <!-- Start Hero -->
-            <div class="hero work-hero">
-                <img class="work-hero-img-ceci" src="/assets/vape_hero.png" alt="">
+            <div class="hero work-hero beaware">
+                <img class="work-hero-img" src="/assets/beaware_hero.jpg" alt="Beaware Image">
             </div>
             <!-- End Hero -->
 
             <div class="row container">
+                <span class="scroll-down-icon">
+                    <i class="fa-solid fa-arrow-down fa-bounce"></i>
+                </span>
                 <!-- Start Project Description -->
                 <div class="row mt-5 mb-5">
                     <div class="col-md-6">
@@ -1682,13 +1694,17 @@ export default {
 
         <!-- START 3D STADIUM -->
         <section v-if="id == '8'" class="work1">
+            <h2 class="hidden">Project NFL Stadium</h2>
             <!-- Start Hero -->
-            <div class="hero work-hero">
-                <img class="work-hero-img-ceci" src="/assets/vape_hero.png" alt="">
+            <div class="hero work-hero nfl">
+                <img class="work-hero-img" src="/assets/sport_hero.jpg" alt="NFL Stadium">
             </div>
             <!-- End Hero -->
 
             <div class="row container">
+                <span class="scroll-down-icon">
+                    <i class="fa-solid fa-arrow-down fa-bounce"></i>
+                </span>
                 <!-- Start Project Description -->
                 <div class="row mt-5 mb-5">
                     <div class="col-md-6">
@@ -1781,13 +1797,17 @@ export default {
 
         <!-- START 3D ROOM -->
         <section v-if="id == '9'" class="work1">
+            <h2 class="hidden">Project Industrial Style 3D Room</h2>
             <!-- Start Hero -->
-            <div class="hero work-hero">
-                <img class="work-hero-img-room" src="/assets/room_hero.png" alt="">
+            <div class="hero work-hero industrial">
+                <img class="work-hero-img" src="/assets/room_hero.jpg" alt="Industrial Style 3D Room Image">
             </div>
             <!-- End Hero -->
 
             <div class="row container">
+                <span class="scroll-down-icon">
+                    <i class="fa-solid fa-arrow-down fa-bounce"></i>
+                </span>
                 <div class="row mt-5 mb-5">
                     <!-- Start Project Description -->
                     <div class="col-md-6">
@@ -1908,16 +1928,17 @@ export default {
 
         <!-- Start Title Sequence  -->
         <section v-if="id == '10'" class="work1">
-
+            <h2 class="hidden">Project Title Sequence</h2>
             <!-- Start Hero -->
-
-            <!-- End Title Sequence  -->
-            <div class="hero work-hero">
-                <img class="work-hero-img-room" src="/assets/killer_hero.png" alt="">
+            <div class="hero work-hero killer">
+                <img class="work-hero-img" src="/assets/killer_hero.jpg" alt="Title Sequence Image">
             </div>
             <!-- End Hero -->
 
             <div class="row container">
+                <span class="scroll-down-icon">
+                    <i class="fa-solid fa-arrow-down fa-bounce"></i>
+                </span>
                 <!-- Start Project Description -->
                 <div class="row mt-5 mb-5">
                     <div class="col-md-6">
@@ -2059,18 +2080,55 @@ main {
             width: 100%;
         }
 
-        .quatro {
-            @include tablet {
-                height: 100vh;
-                width: 100vw;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-image: url(/assets/quatro_hero.gif);
-                background-attachment: fixed;
+        &.quatro {
+            background-image: url(/assets/quatro_hero.jpg);
+        }
 
-                .work-hero-img {
-                    display: none;
-                }
+        &.hockey {
+            background-image: url(/assets/hockey_hero.jpg);
+        }
+
+        &.banting {
+            background-image: url(/assets/banting_hero.jpg);
+        }
+
+        &.ceci {
+            background-image: url(/assets/ceci_hero.jpg);
+        }
+
+        &.demo-reel {
+            background-image: url(/assets/demoReel_hero.jpg);
+        }
+
+        &.beaware {
+            background-image: url(/assets/beaware_hero.jpg);
+        }
+
+        &.portfolio-site {
+            background-image: url(/assets/portfolio_hero.jpg);
+        }
+
+        &.nfl {
+            background-image: url(/assets/sport_hero.jpg);
+        }
+
+        &.industrial {
+            background-image: url(/assets/room_hero.jpg);
+        }
+
+        &.killer {
+            background-image: url(/assets/killer_hero.jpg);
+        }
+
+        @include tablet {
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            .work-hero-img {
+                display: none;
             }
         }
 
@@ -2152,6 +2210,12 @@ main {
         }
 
         .typoSize {
+            font-size: 2em;
+        }
+
+        .twTitle {
+            color: $pink;
+            font-weight: bold;
             font-size: 2em;
         }
 
@@ -2243,14 +2307,16 @@ main {
         font-weight: bold;
     }
 
-    .robotoFontB {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 900;
-    }
+
 
     .robotoFontR {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
+    }
+
+    .robotoTitle {
+        color: $pink;
+        font-size: 2em;
     }
 
     .openFontR {
@@ -2263,6 +2329,10 @@ main {
         font-family: 'Open Sans', sans-serif;
         font-weight: 800;
 
+    }
+
+    .openTitle {
+        color: $pink;
     }
 
     .velvetFont {
@@ -2317,6 +2387,21 @@ main {
             left: 0;
             width: 100%;
             height: 100%;
+        }
+    }
+
+    .scroll-down-icon {
+        display: none;
+        margin: auto;
+
+        @include tablet {
+            display: flex;
+        }
+
+        svg {
+            font-size: 2rem;
+            color: $pink;
+            margin-top: -50px;
         }
     }
 }
