@@ -1,8 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.68 29.23">
-  <rect x=".34" y=".6" width="28" height="28" rx="4" ry="4" style="fill: #ed1d74;"/>
-  <g>
-    <rect x="7.05" y="6.16" width="2.5" height="15.22" style="fill: #f8f7f9;"/>
-    <path d="m19.06,6.16v3.9h-.75c-2.55,0-5.63,1.65-5.63,5.85,0,3.25,1.65,5.69,5.15,5.69,2.58,0,3.8-.89,3.8-.89V6.16h-2.57Zm0,13.19s-.29.13-1,.13-2.84-.31-2.84-3.7,2.46-3.66,3.05-3.66.78.16.78.16v7.06h0Z" style="fill: #f8f7f9;"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 28 28" style="enable-background:new 0 0 28 28;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#ED1D74;}
+	.st1{fill:#F8F7F9;}
+</style>
+<path class="st0" d="M4,0h20c2.2,0,4,1.8,4,4v20c0,2.2-1.8,4-4,4H4c-2.2,0-4-1.8-4-4V4C0,1.8,1.8,0,4,0z"/>
+<g>
+	<rect x="6.7" y="5.6" class="st1" width="2.5" height="15.2"/>
+	<path class="st1" d="M18.7,5.6v3.9H18c-2.6,0-5.6,1.6-5.6,5.9c0,3.2,1.6,5.7,5.2,5.7c2.6,0,3.8-0.9,3.8-0.9V5.6H18.7z M18.7,18.7
+		c0,0-0.3,0.1-1,0.1s-2.8-0.3-2.8-3.7s2.5-3.7,3-3.7s0.8,0.2,0.8,0.2L18.7,18.7L18.7,18.7L18.7,18.7z"/>
+</g>
 </svg>

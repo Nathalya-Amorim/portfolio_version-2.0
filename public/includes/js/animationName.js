@@ -2,7 +2,8 @@
 gsap.registerPlugin(TextPlugin);
 
 
-const words = ["Front-End Developer.", "UX/UI Designer.", "Web Designer."]
+const words = ["UX/UI Designer.", "Online Marathoner.", "UX Unicorn.", "Internet Explorer."]
+
 
 let cursor = gsap.to('.cursor', { opacity: 0, ease: "power2.inOut", repeat: -1 })
 let masterTl = gsap.timeline({ repeat: -1 }).pause()
