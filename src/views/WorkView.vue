@@ -429,9 +429,6 @@ export default {
                             alt=" Second Megazine with Quatro's advertisment ">
                     </div>
 
-                    <div class="col-12 mb-3">
-                        <img class="full-width" src="/assets/quatro_mockup02.jpg" alt="Megazine with Quatro's advertisment">
-                    </div>
                     <div class="col-12">
                         <img class="full-width" src="/assets/quatro_mockup04.jpg"
                             alt=" Second Megazine with Quatro's advertisment ">

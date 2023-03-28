@@ -8,7 +8,7 @@
                     <i class="fa-brands fa-instagram"></i>
                 </span>
             </a>
-            <a href="https://www.linkedin.com/in/nathalya-menezes-0b1a37130/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/nathalya-menezes-design/" target="_blank" rel="noopener noreferrer">
                 <span class="social d-flex">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </span>

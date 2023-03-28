@@ -6,27 +6,35 @@
                 <h3 class="about-title mb-30">&lt;about&gt;</h3>
 
                 <p class="p-about mb-20">Hello there! You stumbled upon me!<br></p>
-                <p class="p-about mb-20">I’m <span class="span-pink">Nathalya Menezes</span>, an <span
-                        class="span-green">UX/UI Web Designer</span>,
-                    currently residing in London, but hailing from Brazil.
+                <p class="p-about mb-20 mr-3">I’m <span class="span-pink">Nathalya</span>, a <span class="span-green">UX/UI
+                        Web
+                        Designer</span>, with a passion for creating digital experiences! I hail from Brazil, but I'm
+                    currently living in London, where I spend my days obsessing over <span class="span-yellow">fonts</span>,
+                    <span class="span-pink">colors</span>, and
+                    <span class="span-green">pixels-perfect designs</span>.<br>
+
                 </p>
-                <p class="p-about mb-20"> From the world of <span class="span-yellow">JavaScript</span>, <span
-                        class="span-pink">HTML</span> and <span class="span-green">CSS</span>, I love exploring new
-                    frontiers and pushing the limits of what's possible. The love for creation led me to persue a career
-                    in the tech industry, starting with a basic <span class="span-pink">HTML</span> course on Udemy and
-                    later enrolling in <span class="span-yellow">Interactive Media Design</span> program at <span
-                        class="span-green">
-                        Fanshawe College</span>.
+                <p class="p-about mb-20 mr-3">My <span class="span-green">design process</span> always starts with a deep
+                    understanding of the <span class="span-yellow">target
+                        audience</span>, which I gain through intense meditation and telepathy (okay, maybe just user
+                    research). Then,
+                    armed with a pencil and a giant eraser, I start sketching out <span class="span-pink">wireframes</span>
+                    and <span class="span-green">layouts</span> until I find the
+                    perfect design.<br>
+                </p>
+                <p class="secondParagraph mr-3"> When it comes to <span class="span-yellow">collaboration</span>, I'm always
+                    down
+                    for a good <span class="span-green">brainstorming</span>
+                    session, as long as there's coffee involved. And don't worry, I won't judge you if you don't know the
+                    difference between serif and sans-serif fonts (hint: one has little feet). <br></p>
+
+                <p class="p-about mr-3"> I'm excited to
+                    bring my <span class="span-pink">UX/UI expertise</span> to the table and help create experiences that
+                    delight and <span class="span-yellow">engage users</span>. And if
+                    you're looking for someone who's skilled in the art of emoji usage, look no further! I've got a PhD in
+                    &#x1F60E;&#x1F44C;&#x1F3FC;.
                     <br>
                 </p>
-                <p class="secondParagraph"> The journey hasnt's been without challenges, but the thrill of overcoming
-                    obstacles and continuously
-                    improving my crafts keeps me motivated and inspired. That's why I am so passionate about my career
-                    and my hobby as <span class="span-pink">Motion Designer</span> and <span class="span-yellow">3D</span>
-                    enthusiast.</p>
-
-                <p class="p-about">So, that's a little about me and my journey into the exciting world of
-                    technology.<br></p>
 
 
             </div>
@@ -94,7 +102,7 @@ export default {
     .about-picture {
         margin: auto;
         position: relative;
-        margin-top: 30px;
+        margin-top: 90px;
         margin-bottom: 50px;
 
         // @include desktop {
