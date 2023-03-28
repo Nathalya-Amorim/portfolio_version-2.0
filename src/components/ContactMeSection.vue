@@ -22,7 +22,7 @@ import axios from 'axios';
                     <ul class="mt-20">
                         <li><a href="https://www.instagram.com/nathalyamorim87/"><i class="fa-brands fa-instagram"></i></a>
                         </li>
-                        <li><a href="https://www.linkedin.com/in/nathalya-menezes-0b1a37130/"><i
+                        <li><a href="https://www.linkedin.com/in/nathalya-menezes-design/"><i
                                     class="fa-brands fa-linkedin-in"></i></a></li>
                         <li><a href="https://discord.com/users/930501284149227550"><i class="fa-brands fa-discord"></i></a>
                         </li>
@@ -146,7 +146,7 @@ export default {
     }
 
     span {
-        font-size: 1.1em;
+        font-size: 1.0em;
         font-weight: 500;
     }
 }
@@ -181,7 +181,7 @@ export default {
         }
 
         label {
-            font-size: 1.1em;
+            font-size: 1.0em;
         }
     }
 
@@ -205,13 +205,13 @@ export default {
         }
     }
 
-    .info.info-error {
-        // display: none;
-    }
+    // .info.info-error {
+    //     // display: none;
+    // }
 
-    .info.info-success {
-        // display: none;
-    }
+    // .info.info-success {
+    //     // display: none;
+    // }
 
     span {
         line-height: 1.7em;

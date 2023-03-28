@@ -8,7 +8,7 @@
                   <span class="feature name">Nathálya Menezes</span>
                   <h4 class="mt-20">
                      <span class="box"></span>
-                     <span class="hi">I'm an </span>
+                     <span class="hi">I'm a </span>
                      <span class="text"></span>
                      <span class="cursor">_</span>
                   </h4>
