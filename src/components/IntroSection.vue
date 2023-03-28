@@ -70,7 +70,7 @@ export default {
       font-family: "Chakra Petch", sans-serif;
       color: rgb(248, 249, 255);
       margin-bottom: 0px;
-
+      font-weight: 400;
 
    }
 
