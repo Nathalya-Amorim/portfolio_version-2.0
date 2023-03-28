@@ -399,7 +399,7 @@ export default {
                 <div class="row mb-5">
                     <div class="col-12">
                         <div class="title-container">
-                            <span class="title pink">13.Proto</span><span class="title green">type</span>
+                            <span class="title pink">13. Proto</span><span class="title green">type</span>
                         </div>
                     </div>
 
@@ -569,8 +569,8 @@ export default {
                             <img class="illustrateImage " src="/assets/problem.svg" alt="Problem Image">
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="col-12">
+                    <div class="col-md-6 d-flex">
+                        <div class="col-12 m-auto">
                             <div class="title-container">
                                 <span class="title pink">Problem</span><span class="title green"> Statement</span>
                             </div>
@@ -590,7 +590,7 @@ export default {
                 <!-- Start Solution Statement -->
                 <div class="row mb-5 mt-5">
                     <div class="col-12 col-md-6">
-                        <div class="col-12">
+                        <div class="col-12 m-auto">
                             <div class="title-container">
                                 <span class="title pink">Solution</span><span class="title green"> Statement</span>
                             </div>
@@ -914,9 +914,9 @@ export default {
                             <img class="illustrateImage " src="/assets/problem.svg" alt="Problem Image">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 m-auto">
                         <div class="title-container">
-                            <span class="title pink">Problem</span><span class="title green">Statement</span>
+                            <span class="title pink">Problem </span><span class="title green">Statement</span>
                         </div>
                         <p> Our challenge was to restructure and reorganize all the content and assets from the previous
                             website to ensure a better user experience, which was complicated by the vast amount of content
@@ -931,7 +931,7 @@ export default {
                 <!-- Start Solution Statement -->
                 <div class="row mb-5 mt-5">
                     <div class="col-12 col-md-6">
-                        <div class="col-12">
+                        <div class="col-12 m-auto">
                             <div class="title-container">
                                 <span class="title pink">Solution</span><span class="title green"> Statement</span>
                             </div>
@@ -955,7 +955,7 @@ export default {
 
                 <!-- Start Project Process -->
                 <div class="row mb-5">
-                    <div class="col-12">
+                    <div class="col-12 m-auto">
                         <div class="title-container">
                             <span class="title pink">01. Project</span><span class="title green"> Process</span>
                         </div>
