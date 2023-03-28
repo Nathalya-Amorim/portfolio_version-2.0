@@ -8,7 +8,7 @@
 
     //Checks for firstname and cleans the text
     if($data){
-        $receipient = "contact@nathalyamenezes.ca";
+        $receipient = "nathalyamorim87@gmail.com";
         $subject = " just made contact! Respond ASAP!";
         $subject_response = "Hi! This is an automatic response.";
         $visitor_name = "";

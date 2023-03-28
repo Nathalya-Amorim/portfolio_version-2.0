@@ -9,7 +9,7 @@ let cursor = gsap.to('.cursor', { opacity: 0, ease: "power2.inOut", repeat: -1 }
 let masterTl = gsap.timeline({ repeat: -1 }).pause()
 let boxTl = gsap.timeline()
 
-boxTl.to('.box', { duration: 1, width: "17vw", delay: 0.5, ease: "power4.inOut" })
+boxTl.to('.box', { duration: 1, width: "17vw", delay: 0.1, ease: "power4.inOut" })
   .from('.hi', { duration: 1, y: "7vw", ease: "power3.out", })
   .to('.hi', { backgroundColor: "#f92572" })
   .to('.box', { duration: 1, height: "7vw", ease: "elastic.out", onComplete: () => masterTl.play() })
