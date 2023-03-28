@@ -21,6 +21,8 @@ export default {
     border: 0px;
     border-radius: 30px;
     margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+
 
     span {
         width: 100%;

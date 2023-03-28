@@ -8,7 +8,7 @@
                   <span class="feature name">Nathálya Menezes</span>
                   <h4 class="mt-20">
                      <span class="box"></span>
-                     <span class="hi">I'm a </span>
+                     <span class="hi">I'm an </span>
                      <span class="text"></span>
                      <span class="cursor">_</span>
                   </h4>
@@ -70,6 +70,8 @@ export default {
       font-family: "Chakra Petch", sans-serif;
       color: rgb(248, 249, 255);
       margin-bottom: 0px;
+
+
    }
 
    .feature {
@@ -111,21 +113,21 @@ export default {
       border-radius: 5px;
       padding-left: 5px;
       margin-right: 8px;
-      font-weight: bold;
+      font-weight: 400;
    }
 
    .text {
       color: white;
       font-size: 1.5em;
       font-family: "Chakra Petch", sans-serif;
-      font-weight: bold;
+      font-weight: 400;
    }
 
    .cursor {
       color: white;
       font-size: 1.5em;
       font-family: "Chakra Petch", sans-serif;
-      font-weight: bold;
+      font-weight: 400;
    }
 
    .intro-resume {

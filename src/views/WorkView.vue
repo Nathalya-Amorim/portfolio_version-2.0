@@ -45,9 +45,13 @@ export default {
 
 <template>
     <main id="body" class="work-body">
+        <a href="/" class="float">
+            <i class="fa-solid fa-house fa-xl"></i>
+        </a>
         <section v-if="id == '1'" class="work1">
             <h2 class="hidden">Project Quatro Sparklign Water</h2>
             <!-- Start Hero -->
+
             <div class="hero work-hero quatro">
                 <img class="work-hero-img" src="/assets/quatro_hero.jpg" alt="Quatro Hero Image">
             </div>
@@ -131,11 +135,15 @@ export default {
                                 <span class="title pink">Problem</span><span class="title green"> Statement</span>
                             </div>
 
-                            <p> Quatro, it is a brand established in 1983, needs a complete rebranding to stay
+                            <p> Quatro is a brand established in 1983, needs a complete rebranding to stay
                                 relevant
                                 in the current market. The challenge is to modernize the brand without losing its original
                                 essence
-                                and core values. The goal is to create a new brand image that is contemporary, visually
+                                and core values. the new brand image should be launched across all marketing channels,
+                                including social media, print, digital, and physical stores. The launch should be
+                                accompanied by a marketing campaign that introduces the new brand identity to the target
+                                market and highlights the brand's core values. The goal is to create a new brand image that
+                                is contemporary, visually
                                 appealing,
                                 and reflects Quatro's core values.</p>
                         </div>
@@ -171,7 +179,7 @@ export default {
                         <div class="col-12">
 
                             <div class="col-12">
-                                <img class="illustrateImage full-width" src="/assets/solution.svg" alt="Solution Image">
+                                <img class="illustrateImage" src="/assets/solution.svg" alt="Solution Image">
                             </div>
                         </div>
                     </div>
@@ -405,7 +413,7 @@ export default {
                 <div class="row mb-5">
                     <div class="col-12">
                         <div class="title-container">
-                            <span class="title pink">14. Ads</span>
+                            <span class="title pink">14. Ads </span><span class="title green">Campaign</span>
                         </div>
                     </div>
 
@@ -416,7 +424,7 @@ export default {
                     <div class="col-12 mb-3">
                         <img class="full-width" src="/assets/quatro_mockup02.jpg" alt="Megazine with Quatro's advertisment">
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 mb-3">
                         <img class="full-width" src="/assets/quatro_mockup03.jpg"
                             alt=" Second Megazine with Quatro's advertisment ">
                     </div>
@@ -468,9 +476,9 @@ export default {
                 <!-- End See Live-->
 
                 <!-- Start Thanks  -->
-                <div class="row mb-5 w-100">
+                <div class="row mb-5 thanks-row">
                     <div class="col-12 d-flex">
-                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto">
+                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto img-thanks">
                     </div>
                     <div class="col-12 thanks mt-3">
                         <span class="row highlight">Thanks for journeying through my project!</span>
@@ -478,7 +486,7 @@ export default {
                             together</span>
                     </div>
                     <div class="col-12 thanks d-flex mt-5">
-                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">OF COURSE</b-button>
+                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">YEAH!</b-button>
                         </div>
                     </div>
                 </div>
@@ -514,7 +522,7 @@ export default {
                                 campaign is dedicated to people of all ages, but with a focus on women, who have
                                 historically
                                 been
-                                underrepresented and subject to bullying in the sport.To achieve its goals, the campaign
+                                underrepresented and subject to bullying in the sport. To achieve its goals, the campaign
                                 encompasses
                                 a variety of activities, including interviews, a website, and advertising projects.
                             </p>
@@ -549,6 +557,8 @@ export default {
                                 <img class="tool-icon" src='/assets/icon_vuejs.svg' alt="Vue Icon">
                                 <img class="tool-icon" src='/assets/icon_bootstrap.svg' alt="Bootstrap Icon">
                                 <img class="tool-icon" src='/assets/icon_nodejs.svg' alt="Node Js Icon">
+                                <img class="tool-icon" src='/assets/icon_php.svg' alt="PHP Icon">
+
                             </div>
                         </div>
                     </div>
@@ -606,7 +616,7 @@ export default {
                         <!-- Start Solution Statement -->
                         <div class="col-12">
                             <div class="col-12">
-                                <img class="illustrateImage full-width" src="/assets/solution.svg" alt="Solution Image">
+                                <img class="illustrateImage " src="/assets/solution.svg" alt="Solution Image">
                             </div>
                         </div>
                         <!-- End Solution Statement -->
@@ -751,7 +761,7 @@ export default {
                 <div class="row mb-5">
                     <div class="col-12">
                         <div class="title-container">
-                            <span class="title pink">08. Advertisment </span><span class="title green">Campaign</span>
+                            <span class="title pink">08. Ads </span><span class="title green">Campaign</span>
                         </div>
                     </div>
                     <div class="col-12 mb-3">
@@ -769,12 +779,31 @@ export default {
                     </div>
                 </div>
                 <!-- End Advertisment -->
+                <!-- Start Video  -->
+                <div class="row mb-5 w-100">
+                    <div class="col-12">
+                        <div class="title-container">
+                            <span class="title pink">09. Video </span><span class="title green">Campaign</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yXOsVaxETxw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Video-->
 
                 <!-- Start See Live  -->
                 <div class="row mb-5">
                     <div class="col-12">
                         <div class="title-container">
-                            <span class="title pink">09. See </span><span class="title green">Live</span>
+                            <span class="title pink">10. See </span><span class="title green">Live</span>
                         </div>
                     </div>
 
@@ -786,9 +815,9 @@ export default {
                 </div>
                 <!-- End See Live-->
                 <!-- Start Thanks  -->
-                <div class="row mb-5 w-100">
+                <div class="row mb-5 thanks-row">
                     <div class="col-12 d-flex">
-                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto">
+                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto img-thanks">
                     </div>
                     <div class="col-12 thanks mt-3">
                         <span class="row highlight">Thanks for journeying through my project!</span>
@@ -796,7 +825,7 @@ export default {
                             together</span>
                     </div>
                     <div class="col-12 thanks d-flex mt-5">
-                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">OF COURSE</b-button>
+                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">YEAH!</b-button>
                         </div>
                     </div>
                 </div>
@@ -892,12 +921,12 @@ export default {
                         <div class="title-container">
                             <span class="title pink">Problem</span><span class="title green">Statement</span>
                         </div>
-                        <p> Our challenge was restructuring and
-                            reorganizing all the content and assets from the previous website to ensure a better user
-                            experience. This required a thorough understanding of the museum's history and exhibits, as
-                            well
-                            as collaboration with subject matter experts, while ensuring adherence to Diabetes Canada
-                            guidelines for color palettes and fonts. </p>
+                        <p> Our challenge was to restructure and reorganize all the content and assets from the previous
+                            website to ensure a better user experience, which was complicated by the vast amount of content
+                            and the need to maintain the accuracy of information. This required a thorough understanding of
+                            the museum's history and exhibits, as well as collaboration with subject matter experts.
+                            Additionally, the adherence to Diabetes Canada guidelines for color palettes and fonts added an
+                            extra layer of complexity. </p>
                     </div>
                 </div>
                 <!-- End Problem Statement -->
@@ -922,7 +951,7 @@ export default {
                     </div>
                     <div class="col-12 col-md-6">
                         <!-- Start Solution Statement -->
-                        <img class="illustrateImage full-width" src="/assets/solution.svg" alt="Solution Image">
+                        <img class="illustrateImage " src="/assets/solution.svg" alt="Solution Image">
                     </div>
                 </div>
                 <!-- End Solution Statement -->
@@ -934,7 +963,7 @@ export default {
                             <span class="title pink">01. Project</span><span class="title green"> Process</span>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <p>
                             The design process helps to solve any kind of problem and put the user at the centre at the
                             analysis
@@ -1047,7 +1076,7 @@ export default {
                 <div class="row mb-5">
                     <div class="col-12">
                         <div class="title-container">
-                            <span class="title pink">08. Advertisment </span><span class="title green">Campaign</span>
+                            <span class="title pink">08. Ads </span><span class="title green">Campaign</span>
                         </div>
                     </div>
 
@@ -1059,12 +1088,30 @@ export default {
                         <img class="full-width" src="/assets/banting_businessCard.png" alt="Business Card Advertsiment">
                     </div>
                 </div>
-                <!-- End Advertisment -->
+                <!-- End Advertisment --> <!-- Start Video  -->
+                <div class="row mb-5 w-100">
+                    <div class="col-12">
+                        <div class="title-container">
+                            <span class="title pink">09. Video </span><span class="title green">Campaign</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TS-sK7p2AJs"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Video-->
 
                 <!-- Start Thanks  -->
-                <div class="row mb-5 w-100">
+                <div class="row mb-5 thanks-row">
                     <div class="col-12 d-flex">
-                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto">
+                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto img-thanks">
                     </div>
                     <div class="col-12 thanks mt-3">
                         <span class="row highlight">Thanks for journeying through my project!</span>
@@ -1072,7 +1119,7 @@ export default {
                             together</span>
                     </div>
                     <div class="col-12 thanks d-flex mt-5">
-                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">OF COURSE</b-button>
+                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">YEAH!</b-button>
                         </div>
                     </div>
                 </div>
@@ -1168,9 +1215,9 @@ export default {
                     </div>
                     <div class="col-12 col-md-6">
                         <span class="title pink  typoSize">Red Velvet</span>
-                        <p class="  velvetFont typoSize">A B C D E F G H I J K L M N<br> O P Q R S T U V W X Y Z</p>
-                        <p class="  cvelvetFont typoSize">a b c d e f g h i j k l m n<br> o p q r s t u v w x y z</p>
-                        <p class=" velvetFont typoSize">0 1 2 3 4 5 6 7 8 9 </p>
+                        <p class="velvetFont typoSize">A B C D E F G H I J K L M N<br> O P Q R S T U V W X Y Z</p>
+                        <p class="velvetFont typoSize">a b c d e f g h i j k l m n<br> o p q r s t u v w x y z</p>
+                        <p class="velvetFont typoSize">0 1 2 3 4 5 6 7 8 9 </p>
                     </div>
 
                     <div class="col-12 col-md-6">
@@ -1202,7 +1249,7 @@ export default {
                 <div class="row mb-5">
                     <div class="col-12">
                         <div class="title-container">
-                            <span class="title pink">03. Advertisment </span><span class="title green">Campaign</span>
+                            <span class="title pink">03. Ads </span><span class="title green">Campaign</span>
                         </div>
                     </div>
 
@@ -1241,9 +1288,9 @@ export default {
                 <!-- End Video-->
 
                 <!-- Start Thanks  -->
-                <div class="row mb-5 w-100">
+                <div class="row mb-5 thanks-row">
                     <div class="col-12 d-flex">
-                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto">
+                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto img-thanks">
                     </div>
                     <div class="col-12 thanks mt-3">
                         <span class="row highlight">Thanks for journeying through my project!</span>
@@ -1251,7 +1298,7 @@ export default {
                             together</span>
                     </div>
                     <div class="col-12 thanks d-flex mt-5">
-                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">OF COURSE</b-button>
+                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">YEAH!</b-button>
                         </div>
                     </div>
                 </div>
@@ -1343,6 +1390,10 @@ export default {
                             <span class="title pink">02. Creation </span><span class="title green">Process</span>
                         </div>
                     </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <p>Below, you can see some of my files created during the creation process.
+                        </p>
+                    </div>
                     <div class="col-12 mb-3">
                         <img class="full-width" src="/assets/demo_process_001.jpg" alt="Brand's MoodBoard">
                     </div>
@@ -1380,9 +1431,9 @@ export default {
                 </div>
                 <!-- End Video-->
                 <!-- Start Thanks  -->
-                <div class="row mb-5 w-100">
+                <div class="row mb-5 thanks-row">
                     <div class="col-12 d-flex">
-                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto">
+                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto img-thanks">
                     </div>
                     <div class="col-12 thanks mt-3">
                         <span class="row highlight">Thanks for journeying through my project!</span>
@@ -1390,7 +1441,7 @@ export default {
                             together</span>
                     </div>
                     <div class="col-12 thanks d-flex mt-5">
-                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">OF COURSE</b-button>
+                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">YEAH!</b-button>
                         </div>
                     </div>
                 </div>
@@ -1416,7 +1467,7 @@ export default {
                 <div class="row mt-5 mb-5">
                     <div class="col-md-6">
                         <div class="title-container">
-                            <span class="title pink">04. Portfolio </span><span class="title green">Website</span>
+                            <span class="title pink">Portfolio </span><span class="title green">Website</span>
                         </div>
                         <p>The Portfolio Website was a challenging project that allowed me to showcase my skills as a
                             designer
@@ -1453,7 +1504,7 @@ export default {
                             <span class="title small pink">Tools</span>
                         </div>
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12 shadowImages">
                                 <img class="tool-icon" src='/assets/icon_ae.svg' alt="Adobe After Effects Icon">
                                 <img class="tool-icon" src='/assets/icon_pr.svg' alt="Adobe Premiere Icon">
                                 <img class="tool-icon" src='/assets/icon_ps.svg' alt="Adobe Photoshop Icon">
@@ -1462,6 +1513,7 @@ export default {
                                 <img class="tool-icon" src='/assets/icon_bootstrap.svg' alt="Bootstrap Icon">
                                 <img class="tool-icon" src='/assets/icon_vuejs.svg' alt="Vue Icon">
                                 <img class="tool-icon" src='/assets/icon_nodejs.svg' alt="Node Js Icon">
+                                <img class="tool-icon" src='/assets/icon_php.svg' alt="PHP Icon">
                             </div>
 
                         </div>
@@ -1528,7 +1580,7 @@ export default {
                 <div class="row mb-5">
                     <div class="col-12">
                         <div class="title-container">
-                            <span class="title pink">04. Advertisment </span><span class="title green">Campaign</span>
+                            <span class="title pink">04. Mock</span><span class="title green">ups</span>
                         </div>
                     </div>
 
@@ -1543,9 +1595,9 @@ export default {
                 <!-- End Advertisment -->
 
                 <!-- Start Thanks  -->
-                <div class="row mb-5 w-100">
+                <div class="row mb-5 thanks-row">
                     <div class="col-12 d-flex">
-                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto">
+                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto img-thanks">
                     </div>
                     <div class="col-12 thanks mt-3">
                         <span class="row highlight">Thanks for journeying through my project!</span>
@@ -1553,7 +1605,7 @@ export default {
                             together</span>
                     </div>
                     <div class="col-12 thanks d-flex mt-5">
-                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">OF COURSE</b-button>
+                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">YEAH!</b-button>
                         </div>
                     </div>
                 </div>
@@ -1642,7 +1694,7 @@ export default {
                 <div class="row mb-5">
                     <div class="col-12">
                         <div class="title-container">
-                            <span class="title pink">02. Advertisment </span><span class="title green">Campaign</span>
+                            <span class="title pink">02. Ads </span><span class="title green">Campaign</span>
                         </div>
                     </div>
 
@@ -1656,7 +1708,7 @@ export default {
                 <div class="row mb-5 w-100">
                     <div class="col-12">
                         <div class="title-container">
-                            <span class="title pink">03. Promotional </span><span class="title green">Video</span>
+                            <span class="title pink">03. Video </span><span class="title green"> Campaign</span>
                         </div>
                     </div>
 
@@ -1672,9 +1724,9 @@ export default {
                 <!-- End Video-->
 
                 <!-- Start Thanks  -->
-                <div class="row mb-5 w-100">
+                <div class="row mb-5 thanks-row">
                     <div class="col-12 d-flex">
-                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto">
+                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto img-thanks">
                     </div>
                     <div class="col-12 thanks mt-3">
                         <span class="row highlight">Thanks for journeying through my project!</span>
@@ -1682,7 +1734,7 @@ export default {
                             together</span>
                     </div>
                     <div class="col-12 thanks d-flex mt-5">
-                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">OF COURSE</b-button>
+                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">YEAH!</b-button>
                         </div>
                     </div>
                 </div>
@@ -1754,11 +1806,33 @@ export default {
                     <!-- End Tools -->
                 </div>
 
+                <!-- Start Room Images-->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="title-container">
+                            <span class="title pink">01. Stadium </span><span class="title green">Images</span>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <img class="full-width" src="/assets/sports_frame01.jpg" alt="Piston Opening">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <img class="full-width" src="/assets/sports_frame02.jpg" alt="Team's flag">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <img class="full-width" src="/assets/sports_frame03.jpg" alt="Video Board">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <img class="full-width" src="/assets/sports_frame04.jpg" alt="Monday Night Football Sign">
+                    </div>
+                </div>
+                <!-- End Room Images -->
+
                 <!-- Start Video  -->
                 <div class="row mb-5 w-100">
                     <div class="col-12">
                         <div class="title-container">
-                            <span class="title pink">Promotional </span><span class="title green">Video</span>
+                            <span class="title pink">02. Video </span><span class="title green">Campaign</span>
                         </div>
                     </div>
 
@@ -1774,9 +1848,9 @@ export default {
                 <!-- End Video-->
 
                 <!-- Start Thanks  -->
-                <div class="row mb-5 w-100">
+                <div class="row mb-5 thanks-row">
                     <div class="col-12 d-flex">
-                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto">
+                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto img-thanks">
                     </div>
                     <div class="col-12 thanks mt-3">
                         <span class="row highlight">Thanks for journeying through my project!</span>
@@ -1784,7 +1858,7 @@ export default {
                             together</span>
                     </div>
                     <div class="col-12 thanks d-flex mt-5">
-                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">OF COURSE</b-button>
+                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">YEAH!</b-button>
                         </div>
                     </div>
                 </div>
@@ -1906,9 +1980,9 @@ export default {
                 </div>
                 <!-- End Video-->
                 <!-- Start Thanks  -->
-                <div class="row mb-5 w-100">
+                <div class="row mb-5 thanks-row">
                     <div class="col-12 d-flex">
-                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto">
+                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto img-thanks">
                     </div>
                     <div class="col-12 thanks mt-3">
                         <span class="row highlight">Thanks for journeying through my project!</span>
@@ -1916,7 +1990,7 @@ export default {
                             together</span>
                     </div>
                     <div class="col-12 thanks d-flex mt-5">
-                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">OF COURSE</b-button>
+                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">YEAH!</b-button>
                         </div>
                     </div>
                 </div>
@@ -1949,14 +2023,9 @@ export default {
                             a
                             Killer. Using After Effects, I researched various inspirational title sequences and drew
                             inspiration
-                            mostly from the title sequence used in season one. Throughout the seasons, the original title
-                            sequence followed different design styles, using different font weights and color schemes. To
-                            achieve my desired result, I utilized Slider Control and Expressions to edit the position of the
-                            RGB
-                            colors in the Channel Mixer effect, and experimented with different modes such as Screen and
-                            Multiply to give textures to images and videos. By the end of the project, I had created a
+                            mostly from the title sequence used in season one. By the end of the project, I had created a
                             compelling and professional title sequence that demonstrated my skills in After Effects and
-                            design.",
+                            design.
 
 
                         </p>
@@ -1998,7 +2067,7 @@ export default {
                         </div>
                     </div>
                     <div class="col-12">
-                        <img class="full-width" src="/assets/styleframe_gif.gif" alt="Title Sequence Styleframe">
+                        <img class="full-width" src="/assets/killer_styleframe.gif" alt="Title Sequence Styleframe">
                     </div>
                 </div>
 
@@ -2008,7 +2077,7 @@ export default {
                 <div class="row mb-5 w-100">
                     <div class="col-12">
                         <div class="title-container">
-                            <span class="title pink">02. Title Sequence </span><span class="title green">Video</span>
+                            <span class="title pink">02. Video </span>
                         </div>
                     </div>
 
@@ -2024,9 +2093,9 @@ export default {
 
                 <!-- End Video-->
                 <!-- Start Thanks  -->
-                <div class="row mb-5 w-100">
+                <div class="row mb-5 thanks-row">
                     <div class="col-12 d-flex">
-                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto">
+                        <img src="/assets/contact_me.png" alt="Memoji" class="m-auto img-thanks">
                     </div>
                     <div class="col-12 thanks mt-3">
                         <span class="row highlight">Thanks for journeying through my project!</span>
@@ -2034,7 +2103,7 @@ export default {
                             together</span>
                     </div>
                     <div class="col-12 thanks d-flex mt-5">
-                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">OF COURSE</b-button>
+                        <div class="m-auto"><b-button class="justify-content-center" @click="showModal">YEAH!</b-button>
                         </div>
                     </div>
                 </div>
@@ -2223,9 +2292,12 @@ main {
             font-family: 'fontscorecomttwcenmt' !important;
         }
 
+
     }
 
     .projects-navbar {
+        z-index: 101;
+
         .nav-button {
             height: 100px;
             cursor: pointer;
@@ -2260,6 +2332,14 @@ main {
             @include tablet {
                 font-size: 2em;
             }
+        }
+    }
+
+    .thanks-row {
+        width: unset;
+
+        @include tablet {
+            width: 100%;
         }
     }
 
@@ -2400,10 +2480,51 @@ main {
 
         svg {
             font-size: 2rem;
-            color: $pink;
+            color: white;
             margin-top: -50px;
         }
     }
+
+    img {
+        &.full-width {
+            box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+
+
+        }
+    }
+
+    .img-thanks,
+    iframe {
+        box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+    }
+
+    .float {
+        display: flex;
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        left: 40px;
+        background-color: $pink;
+        color: $white;
+        border-radius: 50px;
+        text-align: center;
+        transition: all ease-in-out .3s;
+        z-index: 100;
+        opacity: .5;
+
+        svg {
+            margin: auto;
+        }
+
+        &:hover {
+            -webkit-box-shadow: 0px 0px 20px 2px $color-button-primary;
+            box-shadow: 0px 0px 20px 2px $color-button-primary;
+            opacity: 1;
+        }
+    }
+
+
 }
 
 .modal-content-custom {

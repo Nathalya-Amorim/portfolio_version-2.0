@@ -1,16 +1,25 @@
 <template>
     <div class="process-card">
-        <img :src='"/assets/" + "card_" + type + ".svg"' :alt='"Card " + type'>
+        <img :src='imageSrc' :alt='"Card " + type'>
         <span>{{ title }}</span>
     </div>
 </template>
 
 <script>
+
 export default {
     name: "ProcessCard",
     props: {
         title: String,
         type: String
+    },
+    methods: {
+
+    },
+    computed: {
+        imageSrc() {
+            return new URL('/assets/card_' + this.type + '.svg', import.meta.url).href;
+        }
     }
 }
 </script>
@@ -27,6 +36,8 @@ export default {
     background-color: transparent;
     border: 3px solid $pink;
     padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+
 
     span {
         width: 100%;

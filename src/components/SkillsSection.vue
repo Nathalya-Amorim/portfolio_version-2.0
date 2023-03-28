@@ -58,6 +58,9 @@ export default {
         @include tablet {
             height: 75px;
             width: 75px;
+            box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+            border-radius: 10px;
+
         }
     }
 
@@ -71,6 +74,7 @@ export default {
         padding-right: 50px;
         margin-top: 30px;
         margin-bottom: 30px;
+
 
         @include tablet {
             grid-template-columns: repeat(5, 1fr);
