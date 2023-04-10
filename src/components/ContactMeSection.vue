@@ -11,8 +11,8 @@ import axios from 'axios';
                 <div :class="{ 'col-md-8 mb-20': hideSocial == false, 'col-md-12 mb-20': hideSocial == true }"
                     data-aos="fade-right" data-aos-ease="ease" data-aos-duration="500" data-aos-delay="500">
                     <span>
-                        You got a question or purpose, or just want to say “hello”? <br>Go ahead. I will be happy to
-                        answer you.
+                        Hey, it's great to see you! If you've got a burning question, a brilliant idea, or just some
+                        thoughts to share, I'm all ears. Let's dive in and discover what we can create together!
                     </span>
                 </div>
                 <div v-if="hideSocial == false" class="social-links col-md-4" data-aos="fade-left" data-aos-ease="ease"

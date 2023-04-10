@@ -2,7 +2,7 @@
 gsap.registerPlugin(TextPlugin);
 
 
-const words = ["UX/UI Designer.", "UX/UI Unicorn.", "Wireframe Warrior.", "Web Designer.", "Responsive Design Rockstart.", "Digital Design Sorcerer"]
+const words = ["UX/UI Designer.", "UX/UI Unicorn.", "Wireframe Warrior.", "Web Designer.", "Responsive Design Rockstar.", "Digital Design Sorcerer"]
 
 
 let cursor = gsap.to('.cursor', { opacity: 0, ease: "power2.inOut", repeat: -1 })

@@ -75,10 +75,8 @@ export default {
                                 terms of its packaging and website. As a part of this project, we worked on developing a new
                                 brand
                                 identity that better aligned with Quatro’s core values and products. Our team worked on
-                                creating
-                                an
-                                attractive and user-friendly website that effectively showcased Quatro’s sparkling water
-                                products.
+                                creating a new, attractive, and user-friendly website that effectively showcased Quatro's
+                                sparkling water products as part of the rebranding project.
                             </p>
                         </div>
                     </div>
@@ -135,17 +133,12 @@ export default {
                                 <span class="title pink">Problem</span><span class="title green"> Statement</span>
                             </div>
 
-                            <p> Quatro is a brand established in 1983, needs a complete rebranding to stay
-                                relevant
-                                in the current market. The challenge is to modernize the brand without losing its original
-                                essence
-                                and core values. the new brand image should be launched across all marketing channels,
-                                including social media, print, digital, and physical stores. The launch should be
-                                accompanied by a marketing campaign that introduces the new brand identity to the target
-                                market and highlights the brand's core values. The goal is to create a new brand image that
-                                is contemporary, visually
-                                appealing,
-                                and reflects Quatro's core values.</p>
+                            <p> Quatro, a brand established in 1983, needed a complete rebranding to stay relevant in the
+                                current market. The challenge was to modernize the brand without losing its original essence
+                                and core values. As part of this effort, our team developed a new brand identity that
+                                aligned better with Quatro's core values and products. The goal was to create a new
+                                brand image that was contemporary, visually appealing, while reflecting Quatro's core
+                                values.</p>
                         </div>
 
                     </div>
@@ -160,16 +153,11 @@ export default {
                                 <span class="title pink">Solution</span><span class="title green"> Statement</span>
                             </div>
 
-                            <p> The solution is to identify the visual elements that are most appealing to the
-                                target
-                                audience, including colors, shapes, and typography. This will ensure that the new brand
-                                identity is
-                                contemporary and visually appealing.
-                                The research will also involve analyzing the competition to identify gaps and opportunities
-                                in the
-                                market. This will enable the team to develop a unique brand identity that stands out from
-                                the
-                                competition.</p>
+                            <p> The solution was to identify the visual elements that would be most appealing to the target
+                                audience, including colors, shapes, and typography. This ensured that the new brand identity
+                                was contemporary and visually appealing. The research also involved analyzing the
+                                competition to identify gaps and opportunities in the market, which enabled the team to
+                                develop a unique brand identity that stood out from the competition.</p>
                         </div>
 
                         <!-- End Problem Statement -->
@@ -196,17 +184,15 @@ export default {
                         </div>
                         <div class="col-12 col-md-6">
                             <p>
-                                The design process helps to solve any kind of problem and put the user at the centre at the
-                                analysis
-                                of their needs. To make a good experience and be satisfied with using any product or service
-                                to
-                                achieve their goal.
+                                Designing with the user in mind helps solve problems and creates products or services that
+                                meet their needs and goals. By focusing on the user's perspective, we can ensure a
+                                satisfying experience that leaves them happy with the end result.
                             </p>
                         </div>
                         <div class="row process-cards">
-                            <ProcessCard title="Discover" type="discover" />
+                            <ProcessCard title="Empathize" type="discover" />
                             <ProcessCard title="Define" type="define" />
-                            <ProcessCard title="Ideat" type="ideat" />
+                            <ProcessCard title="Ideate" type="ideat" />
                             <ProcessCard title="Design" type="design" />
                             <ProcessCard title="Test" type="test" />
                         </div>
@@ -235,9 +221,8 @@ export default {
                         </div>
                     </div>
                     <div class="col-12 col-md-6 mb-3">
-                        <p>Using the user persona, we defined how the target profile will say, think, feel and do about
-                            choosing
-                            our brand.
+                        <p>By using the user persona, we defined the target audience's thoughts, feelings, actions, and
+                            opinions when choosing our brand.
                         </p>
                     </div>
                     <div class="col-12">
@@ -630,16 +615,15 @@ export default {
                     </div>
                     <div class="col-12 col-md-6">
                         <p>
-                            The design process helps to solve any kind of problem and put the user at the centre at the
-                            analysis
-                            of their needs. To make a good experience and be satisfied with using any product or service to
-                            achieve their goal.
+                            Designing with the user in mind helps solve problems and creates products or services that
+                            meet their needs and goals. By focusing on the user's perspective, we can ensure a
+                            satisfying experience that leaves them happy with the end result.
                         </p>
                     </div>
                     <div class="row process-cards">
-                        <ProcessCard title="Discover" type="discover" />
+                        <ProcessCard title="Empathize" type="discover" />
                         <ProcessCard title="Define" type="define" />
-                        <ProcessCard title="Ideat" type="ideat" />
+                        <ProcessCard title="Ideate" type="ideat" />
                         <ProcessCard title="Design" type="design" />
                         <ProcessCard title="Test" type="test" />
                     </div>
@@ -962,16 +946,15 @@ export default {
                     </div>
                     <div class="col-12 col-md-6">
                         <p>
-                            The design process helps to solve any kind of problem and put the user at the centre at the
-                            analysis
-                            of their needs. To make a good experience and be satisfied with using any product or service to
-                            achieve their goal.
+                            Designing with the user in mind helps solve problems and creates products or services that
+                            meet their needs and goals. By focusing on the user's perspective, we can ensure a
+                            satisfying experience that leaves them happy with the end result.
                         </p>
                     </div>
                     <div class="row process-cards">
-                        <ProcessCard title="Discover" type="discover" />
+                        <ProcessCard title="Empathize" type="discover" />
                         <ProcessCard title="Define" type="define" />
-                        <ProcessCard title="Ideat" type="ideat" />
+                        <ProcessCard title="Ideate" type="ideat" />
                         <ProcessCard title="Design" type="design" />
                         <ProcessCard title="Test" type="test" />
                     </div>
@@ -1569,6 +1552,9 @@ export default {
                         <ColorSample color="#e7db75" />
                         <ColorSample color="#78c7ba" />
                         <ColorSample color="#f8f9ff" />
+                        <ColorSample color="#2a394c" />
+
+
                     </div>
                 </div>
                 <!-- End Color Palette -->
